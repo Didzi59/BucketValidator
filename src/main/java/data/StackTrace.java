@@ -3,25 +3,26 @@ package data;
 import java.util.LinkedList;
 
 public class StackTrace {
-	private LinkedList<String> calls;
-	private int bucket;
+	private LinkedList<String> functionCalls;
+	private String bucket;
 		
-	public StackTrace(int bucket) {
+	public StackTrace(String bucket) {
 		super();
 		this.bucket = bucket;
-		this.calls = new LinkedList<String>();
+		this.functionCalls = new LinkedList<String>();
 	}
 	
 	public void addCall(String call) {
-		this.calls.add(call);
+		this.functionCalls.add(call);
 	}
 	
 	public LinkedList<String> getCalls() {
-		return calls;
+		return functionCalls;
 	}
 	
-	public int getBucket() {
+	public String getBucket() {
 		return bucket;
 	}
+
 	
 }
