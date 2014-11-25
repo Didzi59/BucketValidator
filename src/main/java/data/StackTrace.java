@@ -4,11 +4,12 @@ import java.util.LinkedList;
 
 public class StackTrace {
 	private LinkedList<String> functionCalls;
-	private String bucket;
-		
-	public StackTrace(String bucket) {
+	private Bucket bucket;
+	private String id;
+	
+	public StackTrace(String id) {
 		super();
-		this.bucket = bucket;
+		this.id = id;
 		this.functionCalls = new LinkedList<String>();
 	}
 	
@@ -20,9 +21,31 @@ public class StackTrace {
 		return functionCalls;
 	}
 	
-	public String getBucket() {
+	public Bucket getBucket() {
 		return bucket;
 	}
 
+	protected void setBucket(Bucket bucket) {
+		this.bucket = bucket;
+	}
 	
+	public String getId() {
+		return this.id;
+	}
+	
+	public LinkedList<String> getFunctionCalls() {
+		return functionCalls;
+	}
+
+	public void setFunctionCalls(LinkedList<String> functionCalls) {
+		this.functionCalls = functionCalls;
+	}
+
+	public void print() {
+		System.out.println("*********** Stacktrace "+this.id+" ***********");
+		for (String f : this.functionCalls) {
+			System.out.println(f);
+		}
+	}
+		
 }

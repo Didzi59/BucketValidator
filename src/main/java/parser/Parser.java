@@ -15,8 +15,8 @@ public class Parser {
 
 	public static StackTrace parse(File file) {
 		// TODO: parse
-		String bucket = file.getParentFile().getName();
-		StackTrace stack = new StackTrace(bucket);
+		String filename = file.getName();
+		StackTrace stack = new StackTrace(filename.substring(0, filename.length()-4));
 
 		//Parse file
 		Scanner scanner;
@@ -28,7 +28,7 @@ public class Parser {
 			    Matcher matcher = pattern.matcher(line);
 			    if (matcher.find()) {
 			    	String functionCall = matcher.group(FUNCTION_NAME_GROUP);
-			    	System.out.println(functionCall);
+			    	//System.out.println(functionCall);
 			    	stack.addCall(functionCall);
 			    }
 			}	 
