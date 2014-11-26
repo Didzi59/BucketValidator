@@ -26,7 +26,7 @@ public class Bucket {
 	
 	public void addStackTrace(StackTrace st) {
 		this.traces.add(st);
-		st.setBucket(this);
+		//st.setOriginalBucket(this);
 	}
 	
 	public boolean equals(Object o) {

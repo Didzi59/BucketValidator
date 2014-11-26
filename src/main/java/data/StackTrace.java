@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class StackTrace {
 	private LinkedList<String> functionCalls;
-	private Bucket bucket;
+	private Bucket originalBucket;
 	private String id;
 	
 	public StackTrace(String id) {
@@ -21,12 +21,12 @@ public class StackTrace {
 		return functionCalls;
 	}
 	
-	public Bucket getBucket() {
-		return bucket;
+	public Bucket getOriginalBucket() {
+		return originalBucket;
 	}
 
-	protected void setBucket(Bucket bucket) {
-		this.bucket = bucket;
+	protected void setOriginalBucket(Bucket bucket) {
+		this.originalBucket = bucket;
 	}
 	
 	public String getId() {
@@ -42,10 +42,10 @@ public class StackTrace {
 	}
 
 	public void print() {
-		System.out.println("*********** Stacktrace "+this.id+" ***********");
-		for (String f : this.functionCalls) {
-			System.out.println(f);
-		}
+		System.out.println("*********** Stacktrace "+this.id+" *********** => "+this.originalBucket.getId());
+//		for (String f : this.functionCalls) {
+//			System.out.println(f);
+//		}
 	}
 		
 }

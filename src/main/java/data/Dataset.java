@@ -1,73 +1,38 @@
 package data;
 
-import java.io.File;
-import java.util.LinkedList;
 import java.util.List;
 
-import parser.Parser;
+import matcher.EditDistanceStrategy;
+import matcher.LCSStrategy;
+import matcher.PrefixMatchStrategy;
+import matcher.StrategyMatching;
 
 public class Dataset {
 	
-	private static final String STACKS_PATH = "/gfs/bossutj/original_stack";
-	private List<Bucket> buckets;
+	private List<StackTrace> original;
+	private List<Bucket> newBucketing;
 	
+	private static final float MATCHING_RATE = 0.25f;
 	
-	public Dataset() {
-		this.buckets = new LinkedList<Bucket>();
+	public Dataset(int threshold, StrategyMatching strategy) {
+		this.original = createOriginal(threshold);
+		this.newBucketing = strategy.executeMatching(this.original, MATCHING_RATE);
 	}
 	
-	public Dataset(File folder) {
-		this.buckets = new LinkedList<Bucket>();
-		this.parseFolder(folder);
-	}
-	
-	public void parseFolder(File folder) {
-		if (folder.isDirectory()) {
-			File[] list = folder.listFiles();
-			if (list != null){
-				for (int i = 0; i < list.length; i++) {
-					// Appel récursif sur les sous-répertoires
-					parseFolder(list[i]);
-				} 
-			} else {
-				System.err.println(folder + " : Reading error.");
-			}
-		} else {
-			//System.out.println("*********************************" +folder.getAbsolutePath());
-			Bucket bucket = this.getOrCreateBucket(folder.getParentFile().getName());	
-			StackTrace stack = Parser.parse(folder);
-			//stack.setBucket(bucket);
-			bucket.addStackTrace(stack);
-		}
-	}
-	
-	private Bucket getOrCreateBucket(String id) {
-		for (Bucket b : this.buckets) {
-			if (b.getId().equals(id)) return b;
-		}
-		Bucket b = new Bucket(id);
-		this.buckets.add(b);
-		return b;
-	}
-	
-	public List<Bucket> getBuckets() {
-		return buckets;
-	}
-
-	public void print() {
-		System.out.println("*********** DATASET ***********");
-		for (Bucket b : this.buckets) {
-			b.print();
-		}
+	private List<StackTrace> createOriginal(int threshold) {
+		return GroundTruth.GT.getAllStackTraces(); //TODO
 	}
 	
 	public static void main(String args[]) {
-		File repertoire = new File(STACKS_PATH);
-		Dataset data = new Dataset(repertoire);
-		//data.parseFolder(repertoire);
-		//data.print();
-		
-		Bucket b = data.getOrCreateBucket("658");
+		//List<Bucket> newBucketing = new EditDistanceStrategy().executeMatching(GroundTruth.GT.getAllStackTraces(), MATCHING_RATE);
+		Dataset data = new Dataset(0, new EditDistanceStrategy());
+		Dataset data2 = new Dataset(0, new PrefixMatchStrategy());
+		Dataset data3 = new Dataset(0, new LCSStrategy());
+		for (Bucket b : data.newBucketing) {
+			b.print();
+		}
+		//Bucket b = data.getOrCreateBucket("658");
 		//Normalizer.removeRecurrence(b).print();
 	}
+
 }
