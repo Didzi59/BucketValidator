@@ -14,7 +14,6 @@ public class Parser {
 	private static final int FUNCTION_NAME_GROUP = 3;
 
 	public static StackTrace parse(File file) {
-		// TODO: parse
 		String filename = file.getName();
 		StackTrace stack = new StackTrace(filename.substring(0, filename.length()-4));
 
@@ -35,7 +34,6 @@ public class Parser {
 			scanner.close();
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

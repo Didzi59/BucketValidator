@@ -58,12 +58,62 @@ public class GroundTruth {
 	}
 
 	private void computeFalseCounters(StackTrace s, StackTrace t) {	
-		if (s.getOriginalBucket().equals(t.getOriginalBucket())) { // Same bucket
-			// First matching function
-		} else { // Distinct bucket
-			// First non-matching function
+		if (s.getOriginalBucket().equals(t.getOriginalBucket())) { 
+			// Same bucket
+			for (String function : s.getFunctionCalls()) {
+				// Count already exist
+				Count c;
+				if (this.counters.containsKey(function)) {
+					c = this.counters.get(function);
+					if (!t.getFunctionCalls().contains(function)) {
+						c.incrementFalseNegative();
+					}
+				} else {
+					c = new Count();
+					if (!t.getFunctionCalls().contains(function)) {
+						c.incrementFalseNegative();
+					}
+					this.counters.put(function, c);
+				}
+				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
+			}
+			for (String function : t.getFunctionCalls()) {
+				// Count already exist
+				Count c;
+				if (this.counters.containsKey(function)) {
+					c = this.counters.get(function);
+					if (!s.getFunctionCalls().contains(function)) {
+						c.incrementFalseNegative();
+					}
+				} else {
+					c = new Count();
+					if (!s.getFunctionCalls().contains(function)) {
+						c.incrementFalseNegative();
+					}
+					this.counters.put(function, c);
+				}
+				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
+			}
+		} else { 
+			// Distinct bucket
+			for (String function : s.getFunctionCalls()) {
+				// Count already exist
+				Count c;
+				if (this.counters.containsKey(function)) {
+					c = this.counters.get(function);
+					if (t.getFunctionCalls().contains(function)) {
+						c.incrementFalsePositive();
+					}
+				} else {
+					c = new Count();
+					if (t.getFunctionCalls().contains(function)) {
+						c.incrementFalsePositive();
+					}
+					this.counters.put(function, c);
+				}
+				if (c.getFalsePositive() > this.max.getFalsePositive()) this.max.incrementFalsePositive();				
+			}
 		}
-		
 	}
 
 	public void parseFolder(File folder) {
@@ -122,13 +172,35 @@ public class GroundTruth {
 		}
 	}
 	
+	public float getFalsePositive(String function) throws NoSuchElementException {
+		float res = 0f;
+		if (this.counters.containsKey(function)) {
+			res = (float) this.counters.get(function).getFalsePositive() / this.max.getFalsePositive();
+		} else {
+			throw new NoSuchElementException("This function is not found: "+function);
+		}
+		return res;
+	}
+	
+	public float getFalseNegative(String function) throws NoSuchElementException {
+		float res = 0f;
+		if (this.counters.containsKey(function)) {
+			res = (float) this.counters.get(function).getFalseNegative() / this.max.getFalseNegative();
+		} else {
+			throw new NoSuchElementException("This function is not found: "+function);
+		}
+		return res;
+	}
+	
 	public static void main(String args[]) {
 		GroundTruth data = GroundTruth.GT;
 		//data.print();
 		for (String s : data.counters.keySet()) {
-			System.out.println(s+" => "+data.counters.get(s).getFrequency());
+			System.out.println(s+" => "+data.counters.get(s).getFrequency()+" => "+data.getFalsePositive(s)+" => "+data.getFalseNegative(s));
 		}
 		System.out.println(data.max.getFrequency());
+		System.out.println(data.max.getFalsePositive());
+		System.out.println(data.max.getFalseNegative());
 		//Bucket b = data.getOrCreateBucket("658");
 		//Normalizer.removeRecurrence(b).print();
 	}
