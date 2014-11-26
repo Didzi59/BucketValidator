@@ -7,7 +7,7 @@ import java.util.List;
 import data.Bucket;
 import data.StackTrace;
 
-public abstract class StrategyMatching {
+public abstract class MatchingStrategy {
 	
 	public List<Bucket> executeMatching(List<StackTrace> original, float rate) {
 		List<Bucket> res = new LinkedList<Bucket>();

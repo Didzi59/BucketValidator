@@ -1,0 +1,667 @@
+OS|Windows NT|6.1.7601 Service Pack 1
+CPU|x86|GenuineIntel family 6 model 42 stepping 7|4
+Crash|EXCEPTION_ACCESS_VIOLATION_READ|0x10|0
+Module|firefox.exe|2.0.0.3882|firefox.pdb|E62D3AF74A9F499E91952EBB50FDD7052|0x00300000|0x003dffff|1
+Module|NPSWF32.dll|11.1.102.55|NPSWF32.pdb|AEBCF68A3E74455994C9CCE79744EF541|0x5e3d0000|0x5ecd9fff|0
+Module|xul.dll|2.0.0.3882|xul.pdb|E8F2B720D68A4ED296B0CF2F08A6E8D72|0x5ece0000|0x5fae3fff|0
+Module|GrooveIntlResource.dll|14.0.6015.1000|GrooveIntlResource.PDB|E5E2C289B1FD4E6AB8D38792031206141|0x60080000|0x608f7fff|0
+Module|OFFICE.ODF|14.0.6024.1000|office.PDB|C8DC298247874B07AF4FAE7F4FBF81062|0x61650000|0x61a69fff|0
+Module|GROOVEEX.DLL|14.0.6106.5000|grooveex.pdb|5C46AB83A53C46C7AA3B19D2E9A5B2B42|0x61e90000|0x62299fff|0
+Module|nss3.dll|3.12.8.0|nss3.pdb|8EB9C372E1E14C35A0D730DCC5E34AD11|0x68a10000|0x68aacfff|0
+Module|nssckbi.dll|1.79.0.0|nssckbi.pdb|D5A7D027AEE549B880EFF55D826565961|0x694b0000|0x694fffff|0
+Module|mozcpp19.dll|8.0.0.0|MOZCPP19.pdb|D7E179AFC3254DF1BBDA1518CED0665C1|0x69500000|0x695aefff|0
+Module|freebl3.dll|3.12.8.0|freebl3.pdb|11A089A11DED4157B954C5063CDD281F1|0x69770000|0x697b0fff|0
+Module|mozsqlite3.dll|3.6.23.1|mozsqlite3.pdb|13FFF24C14B84552BF7E9CE9D5D6B54A2|0x697c0000|0x69874fff|0
+Module|softokn3.dll|3.12.8.0|softokn3.pdb|A0CE1F0DDE02416DA70FA653EC6CB9BA1|0x6af50000|0x6af75fff|0
+Module|EhStorShell.dll|6.1.7600.16385|EhStorshell.pdb|878E29FEBFDD46DBA28AA12389F37C741|0x6b0e0000|0x6b110fff|0
+Module|nspr4.dll|4.8.6.0|nspr4.pdb|BC60F7ED2B304B2787B2D2BE074FD1241|0x6b120000|0x6b150fff|0
+Module|mozcrt19.dll|8.0.0.0|MOZCRT19.pdb|01DB07DE74454EC687BC4F5D2F71A5361|0x6b740000|0x6b7effff|0
+Module|ATL90.dll|9.0.30729.6161|atl90.i386.pdb|D2ABFB75745145CFBDA398E8D4A0B5133|0x6b810000|0x6b83afff|0
+Module|ssl3.dll|3.12.8.0|ssl3.pdb|113F89944FD947C9841A764E96C1F9211|0x6b840000|0x6b860fff|0
+Module|browsercomps.dll|2.0.0.3882|browsercomps.pdb|D1CE0C3361B440D1A87B476CC7D7BDCD2|0x6d0e0000|0x6d100fff|0
+Module|t2embed.dll|6.1.7601.17514|t2embed.pdb|548E9B4ABB754311AE7E003B76116F401|0x6d120000|0x6d13dfff|0
+Module|shdocvw.dll|6.1.7601.17514|shdocvw.pdb|12FE66A5FBC346CBA3FB85D90A8F76A92|0x6d140000|0x6d16dfff|0
+Module|rsaenh.dll|6.1.7600.16385|rsaenh.pdb|F03813E5A0554853A6BC085C17A3AB352|0x6d880000|0x6d8bafff|0
+Module|dui70.dll|6.1.7600.16385|DUI70.pdb|EF8C41DF5F4D4D1A99D40BCBE9C9DAB32|0x6d960000|0x6da11fff|0
+Module|nssdbm3.dll|3.12.8.0|nssdbm3.pdb|2B3CDAE4C5D04332BC4F203ABA2B1F521|0x6db80000|0x6db97fff|0
+Module|smime3.dll|3.12.8.0|smime3.pdb|66C7FC4511F24DED90B19C6C5C29D42B1|0x6dbf0000|0x6dc07fff|0
+Module|cryptsp.dll|6.1.7600.16385|cryptsp.pdb|9536207F9C264D92B2C50D44E77AC0A91|0x6dcd0000|0x6dce5fff|0
+Module|explorerframe.dll|6.1.7601.17514|ExplorerFrame.pdb|E5AAAE8E539E418481918BC99DDF5A302|0x6dd90000|0x6defefff|0
+Module|ntmarta.dll|6.1.7600.16385|ntmarta.pdb|654E30BBAE864799893AF657FEA771722|0x6dfa0000|0x6dfc0fff|0
+Module|nssutil3.dll|3.12.8.0|nssutil3.pdb|92F06EDC9F484B41A7098A8BC06A7BCD1|0x6dfd0000|0x6dfe3fff|0
+Module|propsys.dll|7.0.7601.17514|propsys.pdb|D0EDA507E53D4579A337F875012D7B482|0x6dff0000|0x6e0e4fff|0
+Module|winspool.drv|6.1.7601.17514|winspool.pdb|B165BBE7CD8C4F39BE373C0D9DFCD77B2|0x6e130000|0x6e180fff|0
+Module|wship6.dll|6.1.7600.16385|wship6.pdb|02E45101E951429F85676ADFCC0EA72A2|0x6e190000|0x6e195fff|0
+Module|winrnr.dll|6.1.7600.16385|winrnr.pdb|45F8B97B128548D788289C58E8C5B3CA2|0x6e200000|0x6e207fff|0
+Module|powrprof.dll|6.1.7600.16385|powrprof.pdb|B1F8F66CCBAD4869BADFD20C1F24AC832|0x6e210000|0x6e234fff|0
+Module|pnrpnsp.dll|6.1.7600.16385|pnrpnsp.pdb|D02619BD04DB444D9215D3CE9D69F1062|0x6e250000|0x6e261fff|0
+Module|NapiNSP.dll|6.1.7600.16385|NapiNSP.pdb|35D1FB446B064C3C84108202E55B284A2|0x6e270000|0x6e27ffff|0
+Module|nlaapi.dll|6.1.7601.17761|nlaapi.pdb|FDEDA6583B214A078ED32201988ECFFC2|0x6e280000|0x6e28ffff|0
+Module|dhcpcsvc.dll|6.1.7600.16385|dhcpcsvc.pdb|D3E01A80603143AC83EA5801BEC674D82|0x6e290000|0x6e2a1fff|0
+Module|mswsock.dll|6.1.7601.17514|mswsock.pdb|5D01BC6D4DA84939BAF8725D60D595A62|0x6e390000|0x6e3cbfff|0
+Module|dnsapi.dll|6.1.7601.17570|dnsapi.pdb|4B77BA91498A432F8DD6E52085C4C4232|0x6e4c0000|0x6e503fff|0
+Module|slc.dll|6.1.7600.16385|slc.pdb|8728388BE5444934AA1B81ADF065B0E41|0x6e640000|0x6e649fff|0
+Module|ntshrui.dll|6.1.7601.17755|ntshrui.pdb|B1397869A4914797AEA1040E4BD4F1932|0x6e650000|0x6e6bffff|0
+Module|linkinfo.dll|6.1.7600.16385|linkinfo.pdb|C59792ACF0F34EC89B922F50152D26F72|0x6e6c0000|0x6e6c8fff|0
+Module|dwmapi.dll|6.1.7600.16385|dwmapi.pdb|D8D91B3F339A4FDC960FC7121D146DF42|0x6e7f0000|0x6e802fff|0
+Module|uxtheme.dll|6.1.7600.16385|wuxtheme.pdb|20C669C0018E406295BFA56B7C93850F2|0x6e970000|0x6e9effff|0
+Module|winmm.dll|6.1.7601.17514|winmm.pdb|7AFD98FCAAD34F6B8B31A4667C4E2BFC2|0x6f050000|0x6f081fff|0
+Module|WSHTCPIP.DLL|6.1.7600.16385|wshtcpip.pdb|92A92FF293574B489795898561F007192|0x6f090000|0x6f094fff|0
+Module|comctl32.dll|6.10.7601.17514|comctl32.pdb|B4CE90AAB95E4B89A22A7711DFD7E6EF2|0x6f250000|0x6f3edfff|0
+Module|msimg32.dll|6.1.7600.16385|msimg32.pdb|13C89B70614E4E7FB1C677D443D15D182|0x6f510000|0x6f514fff|0
+Module|apphelp.dll|6.1.7601.17514|apphelp.pdb|F442BEDCC0F646D3840D29898C5899CB2|0x6f520000|0x6f56bfff|0
+Module|feclient.dll|6.1.7600.16385|feclient.pdb|559D3ADA120A4643B6EF40FF841B7D902|0x6f870000|0x6f87bfff|0
+Module|mscms.dll|6.1.7601.17514|mscms.pdb|93303CBC777E44A592376E1F326E20172|0x6f8d0000|0x6f948fff|0
+Module|vksaver3.dll|3.1.0.3|VKSaver3.pdb|1C0F81D0E19F46DF93A1E6F1AF8574181|0x6fef0000|0x6ff05fff|0
+Module|srvcli.dll|6.1.7601.17514|srvcli.pdb|B83FAA07A5A644DEAF314DD746429E092|0x6ff20000|0x6ff38fff|0
+Module|profapi.dll|6.1.7600.16385|profapi.pdb|CA045CA9E5C74D899B90E776B38A18B32|0x6ff70000|0x6ff7afff|0
+Module|userenv.dll|6.1.7601.17514|userenv.pdb|FD47F51275F84FCAAA6071CB11CC4AB82|0x6ff80000|0x6ff96fff|0
+Module|RpcRtRemote.dll|6.1.7601.17514|RpcRtRemote.pdb|16827EB67C584E0D8B17B60D76B2B0CE2|0x6fff0000|0x6fffdfff|0
+Module|dsound.dll|6.1.7600.16385|dsound.pdb|F38F478065E247C68EDA699606F56EED2|0x701a0000|0x70211fff|0
+Module|mozalloc.dll|2.0.0.3882|mozalloc.pdb|6D3FDB92499A444AB72587C85FBB918E2|0x708f0000|0x708f5fff|0
+Module|duser.dll|6.1.7600.16385|DUser.pdb|363E97D3DCE44C3786A74C5EF3BB268D2|0x70900000|0x7092efff|0
+Module|rtutils.dll|6.1.7601.17514|rtutils.pdb|B77946994AF64DE6B40CBFFE6D34D0492|0x70930000|0x7093cfff|0
+Module|xpcom.dll|2.0.0.3882|xpcom.pdb|57BB96834DE84304AC9DAE09918BCD042|0x70940000|0x70946fff|0
+Module|snxhk.dll|7.0.1456.418|snxhk.pdb|49E397BBCAB14F7485BC8FFDB67ED8F51|0x70950000|0x7098bfff|0
+Module|plc4.dll|4.8.6.0|plc4.pdb|13FE68C21E474A039C99CDDD9ABC8D501|0x70990000|0x70996fff|0
+Module|WindowsCodecs.dll|6.1.7601.17514|WindowsCodecs.pdb|1A9E904F00E8490C83F8BB46A620A91D2|0x70b40000|0x70c3afff|0
+Module|dhcpcsvc6.DLL|6.1.7601.17970|dhcpcsvc6.pdb|D9D4FA57F2454FF78C97E1F90A82A2632|0x70e00000|0x70e0cfff|0
+Module|plds4.dll|4.8.6.0|plds4.pdb|BBC4E13EBF904931A79175A38177189E1|0x70e80000|0x70e86fff|0
+Module|rasadhlp.dll|6.1.7600.16385|rasadhlp.pdb|9C177D0E6FD14D28BAE05D9757E8182F2|0x70fd0000|0x70fd5fff|0
+Module|FWPUCLNT.DLL|6.1.7601.17514|fwpuclnt.pdb|EB7D55A536354AD987CE2E36914AAF372|0x71060000|0x71097fff|0
+Module|wshbth.dll|6.1.7601.17514|wshbth.pdb|A4029CD52356436BB45283F6D1D1A7101|0x71100000|0x7110cfff|0
+Module|pshook.dll|3.2.8.94|pshook.pdb|74B835C8792E48EA9D53FFCBD83EAD099|0x73b40000|0x73b49fff|0
+Module|rasman.dll|6.1.7600.16385|rasman.pdb|DF9A860877F94FECBB7A2CF29C7D5EDD2|0x73b60000|0x73b74fff|0
+Module|rasapi32.dll|6.1.7600.16385|rasapi32.pdb|B6E3857A947F4F9E86D6C3A36576BF152|0x73b80000|0x73bd1fff|0
+Module|winnsi.dll|6.1.7600.16385|winnsi.pdb|F7A0C25B1B0E4FA6876494D3F6BFD1012|0x73be0000|0x73be6fff|0
+Module|IPHLPAPI.DLL|6.1.7601.17514|iphlpapi.pdb|F162D2E137ED42978BF38C99AEE2DAAB2|0x73bf0000|0x73c0bfff|0
+Module|cscapi.dll|6.1.7601.17514|cscapi.pdb|CC82DBD0C27D422C8E970BD83ECE179F2|0x73f90000|0x73f9afff|0
+Module|dbghelp.dll|6.1.7601.17514|dbghelp.pdb|6B19F261EE434AF59623D1791CE5A7D72|0x74020000|0x7410afff|0
+Module|version.dll|6.1.7601.17647|version.pdb|3D825DC94A7441DC8BF454A99E79F2222|0x74110000|0x74118fff|0
+Module|wsock32.dll|6.1.7600.16385|wsock32.pdb|0AAE6683A7F540DFB265DCD12B7BD0FB2|0x74210000|0x74216fff|0
+Module|msvcp90.dll|9.0.30729.6161|msvcp90.i386.pdb|A23D796E66BB430B891568A6EF0C750C1|0x74290000|0x7431dfff|0
+Module|msvcr90.dll|9.0.30729.6161|msvcr90.i386.pdb|7A6ED43F62E84844B254EC49AEF1078C1|0x74320000|0x743c2fff|0
+Module|CRYPTBASE.dll|6.1.7600.16385|cryptbase.pdb|E62FEAE559EE4CD995614215B01AC2102|0x748d0000|0x748dbfff|0
+Module|sspicli.dll|6.1.7601.17856|wsspicli.pdb|3098DDD636D246ABBB226C68C351E6451|0x748e0000|0x7493ffff|0
+Module|usp10.dll|1.626.7601.18009|usp10.pdb|2EF794CAA59648A88F5649B4124A8FCF1|0x74940000|0x749dcfff|0
+Module|ole32.dll|6.1.7601.17514|ole32.pdb|5061F11A9A57433595EA5EA75A156F4B2|0x749e0000|0x74b3bfff|0
+Module|shlwapi.dll|6.1.7601.17514|shlwapi.pdb|E128B1CEE2EB438C8646E6967118F33E2|0x74b40000|0x74b96fff|0
+Module|user32.dll|6.1.7601.17514|wuser32.pdb|0FCE9CC301ED4567A819705B2718E1D62|0x74ba0000|0x74c9ffff|0
+Module|normaliz.dll|6.1.7600.16385|normaliz.pdb|9481804BB4FD4703AE6AE76F8B99B4761|0x74ca0000|0x74ca2fff|0
+Module|comdlg32.dll|6.1.7601.17514|comdlg32.pdb|96BC483CDFF04D1AAFE462F093B954EC2|0x74cb0000|0x74d2afff|0
+Module|psapi.dll|6.1.7600.16385|psapi.pdb|A895A052F325481B9E2DA00A29E8D5DF2|0x74d30000|0x74d34fff|0
+Module|devobj.dll|6.1.7601.17621|devobj.pdb|583F4457964D46CA8C36ED4903BE6AA22|0x74d40000|0x74d51fff|0
+Module|kernel32.dll|6.1.7601.18015|wkernel32.pdb|1C690A8592304467BB15A09CEA7180FA2|0x74d60000|0x74e6ffff|0
+Module|cfgmgr32.dll|6.1.7601.17621|cfgmgr32.pdb|E4C73E93B825413F99E80BA656C483172|0x74e70000|0x74e96fff|0
+Module|imagehlp.dll|6.1.7601.17787|imagehlp.pdb|73C5974B852844D897C7FF0F9A12742C2|0x74ea0000|0x74ec9fff|0
+Module|ws2_32.dll|6.1.7601.17514|ws2_32.pdb|18C960B958404C4F80F686EE978A33D42|0x74ed0000|0x74f04fff|0
+Module|imm32.dll|6.1.7601.17514|wimm32.pdb|35DD4069EB2A43BF869D6E311FAD09452|0x74f10000|0x74f6ffff|0
+Module|advapi32.dll|6.1.7601.17514|advapi32.pdb|3F32049F550C42B09CF114A1FB8A97E92|0x74f70000|0x7500ffff|0
+Module|setupapi.dll|6.1.7601.17514|setupapi.pdb|C6B7CC380FCD42C29EDB1B61757DFD922|0x75010000|0x751acfff|0
+Module|crypt32.dll|6.1.7601.17856|crypt32.pdb|C9C09A1FF969489DACF298C897A447C82|0x751b0000|0x752cdfff|0
+Module|urlmon.dll|9.0.8112.16457|urlmon.pdb|36C353189B3B49B886C071509A0E03D92|0x752d0000|0x753e0fff|0
+Module|oleaut32.dll|6.1.7601.17676|oleaut32.pdb|68047829A4754E789AC1C8035BA168CD2|0x753f0000|0x7547efff|0
+Module|msasn1.dll|6.1.7601.17514|msasn1.pdb|003D5F0E24804B20953A7A021B52FC322|0x75480000|0x7548bfff|0
+Module|sechost.dll|6.1.7600.16385|sechost.pdb|7AF14D02D41E4CD6942745FE0E6372B11|0x75520000|0x75538fff|0
+Module|KERNELBASE.dll|6.1.7601.18015|wkernelbase.pdb|2A4B0EB4E64A4BCA8FF4A7CAD628C7FA1|0x75540000|0x75586fff|0
+Module|Wldap32.dll|6.1.7601.17514|wldap32.pdb|A0183052C47E4652BFC983CC603C12442|0x75590000|0x755d4fff|0
+Module|msvcrt.dll|7.0.7601.17744|msvcrt.pdb|F1D253F9555C46DF8076400A52B3A9292|0x755e0000|0x7568bfff|0
+Module|wininet.dll|9.0.8112.16457|wininet.pdb|6322BFA5EEA24A329FDC8269ACA33CF52|0x756c0000|0x757dafff|0
+Module|msctf.dll|6.1.7600.16385|msctf.pdb|173DAEF86B2548DBA6134EB74C4D2F232|0x757e0000|0x758abfff|0
+Module|gdi32.dll|6.1.7601.17514|wgdi32.pdb|08A541B5942242BDB4AEABD8C87E4CFF2|0x758b0000|0x7593ffff|0
+Module|clbcatq.dll|2001.12.8530.16385|CLBCatQ.pdb|00A720C79BAC402295B6EBDC147257182|0x759a0000|0x75a22fff|0
+Module|nsi.dll|6.1.7600.16385|nsi.pdb|D15A81679FAE4A7392344B6FD26867942|0x75a30000|0x75a35fff|0
+Module|shell32.dll|6.1.7601.17859|shell32.pdb|1489BCD8E80C441E91308A093631DE5E2|0x75a40000|0x76689fff|0
+Module|iertutil.dll|9.0.8112.16457|iertutil.pdb|E575AE777CA74E1FB092DDCCAA6D70D52|0x76690000|0x76847fff|0
+Module|rpcrt4.dll|6.1.7601.17514|wrpcrt4.pdb|FAC24015130D4D7FAAA77EA36ED5AF1C2|0x76850000|0x7693ffff|0
+Module|lpk.dll|6.1.7600.16385|wlpk.pdb|C39166A53CCE43F0ADF876B9C637A1EA1|0x771d0000|0x771d9fff|0
+Module|ntdll.dll|6.1.7601.17725|wntdll.pdb|D74F79EB1F8D4A45ABCD2F476CCABACC2|0x77200000|0x7737ffff|0
+
+0|0|xul.dll|nsTransitionManager::WillRefresh(mozilla::TimeStamp)|hg:hg.mozilla.org/mozilla-central:layout/style/nsTransitionManager.cpp:9d6448b6a677|931|0x12
+0|1|xul.dll|nsRefreshDriver::Notify(nsITimer *)|hg:hg.mozilla.org/mozilla-central:layout/base/nsRefreshDriver.cpp:9d6448b6a677|227|0x12
+0|2|xul.dll|nsTimerImpl::Fire()|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsTimerImpl.cpp:9d6448b6a677|428|0x8
+0|3|xul.dll|nsTimerEvent::Run()|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsTimerImpl.cpp:9d6448b6a677|517|0x4
+0|4|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+0|5|xul.dll|mozilla::ipc::MessagePump::Run(base::MessagePump::Delegate *)|hg:hg.mozilla.org/mozilla-central:ipc/glue/MessagePump.cpp:9d6448b6a677|118|0x28
+0|6|xul.dll||||0xb7a45b
+0|7|xul.dll|MessageLoop::RunInternal()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|219|0x8
+0|8|xul.dll|MessageLoop::RunHandler()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|202|0x4
+0|9|xul.dll|_SEH_epilog4|||0x13
+0|10|xul.dll|MessageLoop::Run()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|176|0x6
+0|11|xul.dll|nsBaseAppShell::Run()|hg:hg.mozilla.org/mozilla-central:widget/src/xpwidgets/nsBaseAppShell.cpp:9d6448b6a677|175|0xb
+0|12|xul.dll|nsAppShell::Run()|hg:hg.mozilla.org/mozilla-central:widget/src/windows/nsAppShell.cpp:9d6448b6a677|243|0xa
+1|0|ntdll.dll|NtGetContextThread|||0x12
+1|1|ntdll.dll|NtClose|||0x11
+1|2|kernel32.dll|CloseHandleImplementation|||0x27
+1|3|dbghelp.dll|Win32LiveSystemProvider::OpenMapping(unsigned short const *,unsigned long *,unsigned short *,unsigned long,void * *)|||0x21b
+1|4|dbghelp.dll|GenAllocateModuleObject(_MINIDUMP_STATE *,_INTERNAL_PROCESS *,unsigned short *,unsigned __int64,unsigned long,_INTERNAL_MODULE * *)|||0x269
+1|5|dbghelp.dll|GenAllocateModuleObject(_MINIDUMP_STATE *,_INTERNAL_PROCESS *,unsigned short *,unsigned __int64,unsigned long,_INTERNAL_MODULE * *)|||0x3bd
+2|0|ntdll.dll|ZwWaitForWorkViaWorkerFactory|||0x12
+2|1|ntdll.dll|TppTimerpSet|||0x24d
+2|2|kernel32.dll|BaseThreadInitThunk|||0x11
+2|3|ntdll.dll|__RtlUserThreadStart|||0x26
+2|4|ntdll.dll|_RtlUserThreadStart|||0x1a
+3|0|ntdll.dll|NtRemoveIoCompletion|||0x15
+3|1|KERNELBASE.dll|GetQueuedCompletionStatus|||0x28
+3|2|xul.dll|base::MessagePumpForIO::GetIOItem(unsigned long,base::MessagePumpForIO::IOItem *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.cc:9d6448b6a677|528|0x24
+3|3|xul.dll|base::MessagePumpForIO::WaitForIOCompletion(unsigned long,base::MessagePumpForIO::IOHandler *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.cc:9d6448b6a677|499|0xb
+3|4|xul.dll|base::MessagePumpForIO::WaitForWork()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.cc:9d6448b6a677|492|0xb
+3|5|xul.dll|base::MessagePumpForIO::DoRunLoop()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.cc:9d6448b6a677|477|0x5
+3|6|xul.dll|base::MessagePumpWin::RunWithDispatcher(base::MessagePump::Delegate *,base::MessagePumpWin::Dispatcher *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.cc:9d6448b6a677|52|0x6
+3|7|xul.dll|base::MessagePumpWin::Run(base::MessagePump::Delegate *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_pump_win.h:9d6448b6a677|78|0xb
+3|8|xul.dll|MessageLoop::RunInternal()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|219|0x8
+3|9|xul.dll|MessageLoop::RunHandler()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|202|0x4
+3|10|xul.dll|base::ThreadLocalPlatform::SetValueInSlot(int &amp;,void *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/thread_local_win.cc:9d6448b6a677|36|0x4
+3|11|xul.dll|MessageLoop::Run()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/message_loop.cc:9d6448b6a677|176|0x6
+3|12|xul.dll|base::Thread::ThreadMain()|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/thread.cc:9d6448b6a677|156|0x8
+3|13|xul.dll|`anonymous namespace'::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:ipc/chromium/src/base/platform_thread_win.cc:9d6448b6a677|26|0x8
+3|14|kernel32.dll|BaseThreadInitThunk|||0x11
+3|15|ntdll.dll|__RtlUserThreadStart|||0x26
+3|16|ntdll.dll|_RtlUserThreadStart|||0x1a
+4|0|ntdll.dll|NtRemoveIoCompletion|||0x15
+4|1|mswsock.dll|SockAsyncThread|||0x6d
+4|2|kernel32.dll|BaseThreadInitThunk|||0x11
+4|3|ntdll.dll|__RtlUserThreadStart|||0x26
+4|4|ntdll.dll|_RtlUserThreadStart|||0x1a
+5|0|ntdll.dll|NtWaitForSingleObject|||0x15
+5|1|mswsock.dll|SockWaitForSingleObject|||0x39
+5|2|mswsock.dll|_allmul|||0x4f
+5|3|ws2_32.dll|select|||0x9e
+5|4|nspr4.dll|_PR_MD_PR_POLL|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w32poll.c:9d6448b6a677|279|0xe
+5|5|nspr4.dll|PR_Poll|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/io/prio.c:9d6448b6a677|173|0x12
+5|6|xul.dll|nsSocketTransportService::Poll(int,unsigned int *)|hg:hg.mozilla.org/mozilla-central:netwerk/base/src/nsSocketTransportService2.cpp:9d6448b6a677|357|0xc
+5|7|xul.dll|nsSocketTransportService::DoPollIteration(int)|hg:hg.mozilla.org/mozilla-central:netwerk/base/src/nsSocketTransportService2.cpp:9d6448b6a677|668|0x10
+5|8|xul.dll|nsSocketTransportService::OnProcessNextEvent(nsIThreadInternal *,int,unsigned int)|hg:hg.mozilla.org/mozilla-central:netwerk/base/src/nsSocketTransportService2.cpp:9d6448b6a677|546|0xc
+5|9|xul.dll|nsSocketTransportService::OnProcessNextEvent(nsIThreadInternal *,int,unsigned int)|hg:hg.mozilla.org/mozilla-central:netwerk/base/src/nsSocketTransportService2.cpp:9d6448b6a677|547|0x8
+5|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|517|0x1
+5|11|xul.dll|NS_ProcessNextEvent_P(nsIThread *,int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/xpcom/build/nsThreadUtils.cpp:9d6448b6a677|250|0x11
+5|12|xul.dll|nsSocketTransportService::Run()|hg:hg.mozilla.org/mozilla-central:netwerk/base/src/nsSocketTransportService2.cpp:9d6448b6a677|589|0x8
+5|13|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+5|14|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+5|15|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+5|16|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+5|17|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+5|18|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+5|19|kernel32.dll|BaseThreadInitThunk|||0x11
+5|20|ntdll.dll|__RtlUserThreadStart|||0x26
+5|21|ntdll.dll|_RtlUserThreadStart|||0x1a
+6|0|ntdll.dll|NtWaitForMultipleObjects|||0x15
+6|1|KERNELBASE.dll|WaitForMultipleObjectsEx|||0xff
+6|2|kernel32.dll|WaitForMultipleObjectsExImplementation|||0x8d
+6|3|kernel32.dll|WaitForMultipleObjects|||0x17
+6|4|xul.dll|nsNotifyAddrListener::Run()|hg:hg.mozilla.org/mozilla-central:netwerk/system/win32/nsNotifyAddrListener.cpp:9d6448b6a677|192|0xe
+6|5|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+6|6|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+6|7|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+6|8|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+6|9|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+6|10|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+6|11|kernel32.dll|BaseThreadInitThunk|||0x11
+6|12|ntdll.dll|__RtlUserThreadStart|||0x26
+6|13|ntdll.dll|_RtlUserThreadStart|||0x1a
+7|0|ntdll.dll|NtWaitForSingleObject|||0x15
+7|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+7|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+7|3|kernel32.dll|WaitForSingleObject|||0x11
+7|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+7|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+7|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+7|7|xul.dll|JSBackgroundThread::work()|hg:hg.mozilla.org/mozilla-central:js/src/jstask.cpp:9d6448b6a677|95|0xa
+7|8|xul.dll|start|hg:hg.mozilla.org/mozilla-central:js/src/jstask.cpp:9d6448b6a677|43|0x8
+7|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+7|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+7|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+7|12|mozcrt19.dll|__dllonexit|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/onexit.c:9d6448b6a677|276|0x5
+7|13|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+7|14|ntdll.dll|__RtlUserThreadStart|||0x26
+8|0|ntdll.dll|NtWaitForSingleObject|||0x15
+8|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+8|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+8|3|kernel32.dll|WaitForSingleObject|||0x11
+8|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+8|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+8|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+8|7|xul.dll|XPCJSRuntime::WatchdogMain(void *)|hg:hg.mozilla.org/mozilla-central:js/src/xpconnect/src/xpcjsruntime.cpp:9d6448b6a677|820|0xd
+8|8|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+8|9|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+8|10|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+8|11|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+8|12|kernel32.dll|BaseThreadInitThunk|||0x11
+8|13|ntdll.dll|__RtlUserThreadStart|||0x26
+8|14|ntdll.dll|_RtlUserThreadStart|||0x1a
+9|0|ntdll.dll|NtWaitForSingleObject|||0x15
+9|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+9|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+9|3|kernel32.dll|WaitForSingleObject|||0x11
+9|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+9|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+9|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+9|7|xul.dll|TimerThread::Run()|hg:hg.mozilla.org/mozilla-central:xpcom/threads/TimerThread.cpp:9d6448b6a677|345|0xe
+9|8|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+9|9|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+9|10|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+9|11|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+9|12|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+9|13|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+9|14|kernel32.dll|BaseThreadInitThunk|||0x11
+9|15|ntdll.dll|__RtlUserThreadStart|||0x26
+9|16|ntdll.dll|_RtlUserThreadStart|||0x1a
+10|0|ntdll.dll|NtWaitForSingleObject|||0x15
+10|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+10|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+10|3|kernel32.dll|WaitForSingleObject|||0x11
+10|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+10|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+10|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+10|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+10|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+10|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+10|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+10|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+10|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+10|13|kernel32.dll|BaseThreadInitThunk|||0x11
+10|14|ntdll.dll|__RtlUserThreadStart|||0x26
+10|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+11|0|ntdll.dll|NtWaitForMultipleObjects|||0x15
+11|1|ntdll.dll|TppWaiterpThread|||0x12b
+11|2|kernel32.dll|BaseThreadInitThunk|||0x11
+11|3|ntdll.dll|__RtlUserThreadStart|||0x26
+11|4|ntdll.dll|_RtlUserThreadStart|||0x1a
+12|0|ntdll.dll|NtWaitForSingleObject|||0x15
+12|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+12|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+12|3|kernel32.dll|WaitForSingleObject|||0x11
+12|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+12|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+12|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+12|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+12|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+12|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+12|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+12|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+12|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+12|13|kernel32.dll|BaseThreadInitThunk|||0x11
+12|14|ntdll.dll|__RtlUserThreadStart|||0x26
+12|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+13|0|ntdll.dll|NtWaitForSingleObject|||0x15
+13|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+13|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+13|3|kernel32.dll|WaitForSingleObject|||0x11
+13|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+13|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+13|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+13|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+13|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+13|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+13|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+13|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+13|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+13|13|kernel32.dll|BaseThreadInitThunk|||0x11
+13|14|ntdll.dll|__RtlUserThreadStart|||0x26
+13|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+14|0|ntdll.dll|NtWaitForSingleObject|||0x15
+14|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+14|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+14|3|kernel32.dll|WaitForSingleObject|||0x11
+14|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+14|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+14|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+14|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+14|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+14|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+14|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+14|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+14|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+14|13|kernel32.dll|BaseThreadInitThunk|||0x11
+14|14|ntdll.dll|__RtlUserThreadStart|||0x26
+14|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+15|0|ntdll.dll|NtFlushBuffersFile|||0x12
+15|1|KERNELBASE.dll|FlushFileBuffers|||0x54
+15|2|kernel32.dll|FlushFileBuffersImplementation|||0x39
+15|3|mozsqlite3.dll|winSync|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|28876|0xd
+15|4|mozsqlite3.dll|syncJournal|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|34981|0x1d
+15|5|mozsqlite3.dll|sqlite3PagerCommitPhaseOne|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|36871|0x6
+15|6|mozsqlite3.dll|vdbeCommit|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|49928|0x2e
+15|7|mozsqlite3.dll|sqlite3VdbeHalt|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|50342|0x6
+15|8|mozsqlite3.dll|sqlite3VdbeExec|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|54122|0x5
+15|9|mozsqlite3.dll|sqlite3_step|hg:hg.mozilla.org/mozilla-central:db/sqlite3/src/sqlite3.c:9d6448b6a677|51794|0x71
+15|10|xul.dll|mozilla::storage::stepStmt(sqlite3_stmt *)|hg:hg.mozilla.org/mozilla-central:storage/src/mozStoragePrivateHelpers.cpp:9d6448b6a677|283|0x5
+15|11|xul.dll|mozilla::storage::AsyncExecuteStatements::executeStatement(sqlite3_stmt *)|hg:hg.mozilla.org/mozilla-central:storage/src/mozStorageAsyncStatementExecution.cpp:9d6448b6a677|345|0x7
+15|12|xul.dll|mozilla::storage::AsyncExecuteStatements::executeAndProcessStatement(sqlite3_stmt *,bool)|hg:hg.mozilla.org/mozilla-central:storage/src/mozStorageAsyncStatementExecution.cpp:9d6448b6a677|292|0x7
+15|13|xul.dll|mozilla::storage::AsyncExecuteStatements::bindExecuteAndProcessStatement(mozilla::storage::StatementData &amp;,bool)|hg:hg.mozilla.org/mozilla-central:storage/src/mozStorageAsyncStatementExecution.cpp:9d6448b6a677|274|0xe
+15|14|xul.dll|mozilla::storage::AsyncExecuteStatements::Run()|hg:hg.mozilla.org/mozilla-central:storage/src/mozStorageAsyncStatementExecution.cpp:9d6448b6a677|597|0xd
+15|15|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+15|16|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+15|17|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+15|18|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+15|19|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+15|20|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+15|21|kernel32.dll|BaseThreadInitThunk|||0x11
+15|22|ntdll.dll|__RtlUserThreadStart|||0x26
+15|23|ntdll.dll|_RtlUserThreadStart|||0x1a
+16|0|ntdll.dll|NtWaitForSingleObject|||0x15
+16|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+16|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+16|3|kernel32.dll|WaitForSingleObject|||0x11
+16|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+16|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+16|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+16|7|xul.dll|nsSSLThread::Run()|hg:hg.mozilla.org/mozilla-central:security/manager/ssl/src/nsSSLThread.cpp:9d6448b6a677|980|0xa
+16|8|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+16|9|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+16|10|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+16|11|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+16|12|kernel32.dll|BaseThreadInitThunk|||0x11
+16|13|ntdll.dll|__RtlUserThreadStart|||0x26
+16|14|ntdll.dll|_RtlUserThreadStart|||0x1a
+17|0|ntdll.dll|NtWaitForSingleObject|||0x15
+17|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+17|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+17|3|kernel32.dll|WaitForSingleObject|||0x11
+17|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+17|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+17|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+17|7|xul.dll|nsCertVerificationThread::Run()|hg:hg.mozilla.org/mozilla-central:security/manager/ssl/src/nsCertVerificationThread.cpp:9d6448b6a677|138|0xa
+17|8|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+17|9|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+17|10|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+17|11|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+17|12|kernel32.dll|BaseThreadInitThunk|||0x11
+17|13|ntdll.dll|__RtlUserThreadStart|||0x26
+17|14|ntdll.dll|_RtlUserThreadStart|||0x1a
+18|0|ntdll.dll|NtWaitForSingleObject|||0x15
+18|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+18|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+18|3|kernel32.dll|WaitForSingleObject|||0x11
+18|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+18|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+18|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+18|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+18|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+18|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+18|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+18|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+18|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+18|13|kernel32.dll|BaseThreadInitThunk|||0x11
+18|14|ntdll.dll|__RtlUserThreadStart|||0x26
+18|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+19|0|ntdll.dll|NtWaitForSingleObject|||0x15
+19|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+19|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+19|3|kernel32.dll|WaitForSingleObject|||0x11
+19|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+19|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+19|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+19|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+19|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+19|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+19|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+19|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+19|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+19|13|kernel32.dll|BaseThreadInitThunk|||0x11
+19|14|ntdll.dll|__RtlUserThreadStart|||0x26
+19|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+20|0|ntdll.dll|NtWaitForSingleObject|||0x15
+20|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+20|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+20|3|kernel32.dll|WaitForSingleObject|||0x11
+20|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+20|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+20|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+20|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+20|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+20|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+20|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+20|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+20|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+20|13|kernel32.dll|BaseThreadInitThunk|||0x11
+20|14|ntdll.dll|__RtlUserThreadStart|||0x26
+20|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+21|0|ntdll.dll|ZwWaitForWorkViaWorkerFactory|||0x12
+21|1|ntdll.dll|TppTimerpSet|||0x24d
+21|2|kernel32.dll|BaseThreadInitThunk|||0x11
+21|3|ntdll.dll|__RtlUserThreadStart|||0x26
+21|4|ntdll.dll|_RtlUserThreadStart|||0x1a
+22|0|ntdll.dll|NtWaitForSingleObject|||0x15
+22|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+22|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+22|3|kernel32.dll|WaitForSingleObject|||0x11
+22|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+22|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+22|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+22|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+22|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+22|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+22|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+22|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+22|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+22|13|kernel32.dll|BaseThreadInitThunk|||0x11
+22|14|ntdll.dll|__RtlUserThreadStart|||0x26
+22|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+23|0|ntdll.dll|NtWaitForSingleObject|||0x15
+23|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+23|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+23|3|kernel32.dll|WaitForSingleObject|||0x11
+23|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+23|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+23|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+23|7|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|530|0x8
+23|8|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+23|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+23|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+23|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+23|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+23|13|kernel32.dll|BaseThreadInitThunk|||0x11
+23|14|ntdll.dll|__RtlUserThreadStart|||0x26
+23|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+24|0|ntdll.dll|NtWaitForMultipleObjects|||0x15
+24|1|KERNELBASE.dll|WaitForMultipleObjectsEx|||0xff
+24|2|kernel32.dll|WaitForMultipleObjectsExImplementation|||0x8d
+24|3|kernel32.dll|WaitForMultipleObjects|||0x17
+24|4|xul.dll|nsDownloadScannerWatchdog::WatchdogThread(void *)|hg:hg.mozilla.org/mozilla-central:toolkit/components/downloads/src/nsDownloadScanner.cpp:9d6448b6a677|704|0x1b
+24|5|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+24|6|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+24|7|kernel32.dll|BaseThreadInitThunk|||0x11
+24|8|ntdll.dll|__RtlUserThreadStart|||0x26
+24|9|ntdll.dll|_RtlUserThreadStart|||0x1a
+25|0|ntdll.dll|NtWaitForSingleObject|||0x15
+25|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+25|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+25|3|kernel32.dll|WaitForSingleObject|||0x11
+25|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+25|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+25|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+25|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+25|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+25|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+25|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+25|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+25|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+25|13|kernel32.dll|BaseThreadInitThunk|||0x11
+25|14|ntdll.dll|__RtlUserThreadStart|||0x26
+25|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+26|0|ntdll.dll|NtWaitForSingleObject|||0x15
+26|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+26|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+26|3|kernel32.dll|WaitForSingleObject|||0x11
+26|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+26|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+26|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+26|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+26|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+26|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+26|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+26|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+26|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+26|13|kernel32.dll|BaseThreadInitThunk|||0x11
+26|14|ntdll.dll|__RtlUserThreadStart|||0x26
+26|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+27|0|ntdll.dll|NtWaitForSingleObject|||0x15
+27|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+27|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+27|3|kernel32.dll|WaitForSingleObject|||0x11
+27|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+27|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+27|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+27|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+27|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+27|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+27|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+27|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+27|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+27|13|kernel32.dll|BaseThreadInitThunk|||0x11
+27|14|ntdll.dll|__RtlUserThreadStart|||0x26
+27|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+28|0|ntdll.dll|NtWaitForSingleObject|||0x15
+28|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+28|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+28|3|kernel32.dll|WaitForSingleObject|||0x11
+28|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+28|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+28|6|nspr4.dll|PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|547|0xa
+28|7|xul.dll|nsHostResolver::GetHostToLookup(nsHostRecord * *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|777|0xe
+28|8|xul.dll|nsHostResolver::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:netwerk/dns/nsHostResolver.cpp:9d6448b6a677|881|0x9
+28|9|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+28|10|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+28|11|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+28|12|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+28|13|kernel32.dll|BaseThreadInitThunk|||0x11
+28|14|ntdll.dll|__RtlUserThreadStart|||0x26
+28|15|ntdll.dll|_RtlUserThreadStart|||0x1a
+29|0|ntdll.dll|NtWaitForSingleObject|||0x15
+29|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+29|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+29|3|kernel32.dll|WaitForSingleObject|||0x11
+29|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+29|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+29|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+29|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+29|8|xul.dll|nsBuiltinDecoderStateMachine::AdvanceFrame()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|1218|0xf
+29|9|xul.dll|nsBuiltinDecoderStateMachine::Run()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|880|0x5
+29|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+29|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+29|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+29|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+29|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+29|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+29|16|kernel32.dll|BaseThreadInitThunk|||0x11
+29|17|ntdll.dll|__RtlUserThreadStart|||0x26
+29|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+30|0|ntdll.dll|NtWaitForSingleObject|||0x15
+30|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+30|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+30|3|kernel32.dll|WaitForSingleObject|||0x11
+30|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+30|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+30|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+30|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+30|8|xul.dll|nsBuiltinDecoderStateMachine::AdvanceFrame()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|1218|0xf
+30|9|xul.dll|nsBuiltinDecoderStateMachine::Run()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|880|0x5
+30|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+30|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+30|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+30|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+30|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+30|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+30|16|kernel32.dll|BaseThreadInitThunk|||0x11
+30|17|ntdll.dll|__RtlUserThreadStart|||0x26
+30|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+31|0|ntdll.dll|NtWaitForSingleObject|||0x15
+31|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+31|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+31|3|kernel32.dll|WaitForSingleObject|||0x11
+31|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+31|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+31|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+31|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+31|8|xul.dll|nsBuiltinDecoderStateMachine::DecodeLoop()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|307|0x9
+31|9|xul.dll|nsRunnableMethodImpl&lt;void ( nsFileUploadContentStream::*)(void),1&gt;::Run()|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/nsThreadUtils.h:9d6448b6a677|347|0x2
+31|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+31|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+31|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+31|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+31|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+31|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+31|16|kernel32.dll|BaseThreadInitThunk|||0x11
+31|17|ntdll.dll|__RtlUserThreadStart|||0x26
+31|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+32|0|ntdll.dll|NtWaitForSingleObject|||0x15
+32|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+32|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+32|3|kernel32.dll|WaitForSingleObject|||0x11
+32|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+32|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+32|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+32|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+32|8|xul.dll|nsBuiltinDecoderStateMachine::DecodeLoop()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|307|0x9
+32|9|xul.dll|nsRunnableMethodImpl&lt;void ( nsFileUploadContentStream::*)(void),1&gt;::Run()|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/nsThreadUtils.h:9d6448b6a677|347|0x2
+32|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+32|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+32|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+32|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+32|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+32|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+32|16|kernel32.dll|BaseThreadInitThunk|||0x11
+32|17|ntdll.dll|__RtlUserThreadStart|||0x26
+32|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+33|0|ntdll.dll|NtWaitForSingleObject|||0x15
+33|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+33|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+33|3|kernel32.dll|WaitForSingleObject|||0x11
+33|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+33|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+33|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+33|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+33|8|xul.dll|nsBuiltinDecoderStateMachine::AudioLoop()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|362|0xa
+33|9|xul.dll|nsRunnableMethodImpl&lt;void ( nsFileUploadContentStream::*)(void),1&gt;::Run()|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/nsThreadUtils.h:9d6448b6a677|347|0x2
+33|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+33|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+33|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+33|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+33|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+33|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+33|16|kernel32.dll|BaseThreadInitThunk|||0x11
+33|17|ntdll.dll|__RtlUserThreadStart|||0x26
+33|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+34|0|ntdll.dll|NtWaitForSingleObject|||0x15
+34|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+34|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+34|3|kernel32.dll|WaitForSingleObject|||0x11
+34|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+34|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+34|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+34|7|xul.dll|mozilla::Monitor::Wait(unsigned int)|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/mozilla/Monitor.h:9d6448b6a677|123|0xf
+34|8|xul.dll|nsBuiltinDecoderStateMachine::AudioLoop()|hg:hg.mozilla.org/mozilla-central:content/media/nsBuiltinDecoderStateMachine.cpp:9d6448b6a677|362|0xa
+34|9|xul.dll|nsRunnableMethodImpl&lt;void ( nsFileUploadContentStream::*)(void),1&gt;::Run()|hg:hg.mozilla.org/mozilla-central:obj-firefox/dist/include/nsThreadUtils.h:9d6448b6a677|347|0x2
+34|10|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+34|11|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+34|12|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+34|13|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+34|14|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+34|15|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+34|16|kernel32.dll|BaseThreadInitThunk|||0x11
+34|17|ntdll.dll|__RtlUserThreadStart|||0x26
+34|18|ntdll.dll|_RtlUserThreadStart|||0x1a
+35|0|ntdll.dll|ZwWaitForWorkViaWorkerFactory|||0x12
+35|1|ntdll.dll|TppTimerpSet|||0x24d
+35|2|kernel32.dll|BaseThreadInitThunk|||0x11
+35|3|ntdll.dll|__RtlUserThreadStart|||0x26
+35|4|ntdll.dll|_RtlUserThreadStart|||0x1a
+36|0|ntdll.dll|NtWaitForSingleObject|||0x15
+36|1|KERNELBASE.dll|WaitForSingleObjectEx|||0x97
+36|2|kernel32.dll|WaitForSingleObjectExImplementation|||0x42
+36|3|kernel32.dll|WaitForSingleObject|||0x11
+36|4|nspr4.dll|_PR_MD_WAIT_CV|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95cv.c:9d6448b6a677|280|0xd
+36|5|nspr4.dll|_PR_WaitCondVar|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/prucv.c:9d6448b6a677|204|0x1b
+36|6|nspr4.dll|PR_Wait|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/prmon.c:9d6448b6a677|184|0x13
+36|7|xul.dll|nsThreadPool::Run()|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThreadPool.cpp:9d6448b6a677|212|0x12
+36|8|xul.dll|nsThread::ProcessNextEvent(int,int *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|547|0x2
+36|9|xul.dll|nsThread::ThreadFunc(void *)|hg:hg.mozilla.org/mozilla-central:xpcom/threads/nsThread.cpp:9d6448b6a677|263|0xb
+36|10|nspr4.dll|_PR_NativeRunThread|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/threads/combined/pruthr.c:9d6448b6a677|426|0x8
+36|11|nspr4.dll|pr_root|hg:hg.mozilla.org/mozilla-central:nsprpub/pr/src/md/windows/w95thred.c:9d6448b6a677|122|0xc
+36|12|mozcrt19.dll|_callthreadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|348|0x8
+36|13|mozcrt19.dll|_threadstartex|hg:hg.mozilla.org/mozilla-central:obj-firefox/memory/jemalloc/crtsrc/threadex.c:9d6448b6a677|326|0x4
+36|14|kernel32.dll|BaseThreadInitThunk|||0x11
+36|15|ntdll.dll|__RtlUserThreadStart|||0x26
+36|16|ntdll.dll|_RtlUserThreadStart|||0x1a</div>
+

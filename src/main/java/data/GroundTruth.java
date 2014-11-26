@@ -15,7 +15,7 @@ public class GroundTruth {
 	private List<Bucket> buckets;
 	private Map<String,Count> counters;
 	private Count max;
-	private static final String STACKS_PATH = "/gfs/bossutj/original_stack"; //TODO: changer chemin
+	private static final String STACKS_PATH = "src/main/resources/original_stack"; //TODO: changer chemin
 	public static final GroundTruth GT = new GroundTruth();
 	
 	private GroundTruth() {

@@ -7,7 +7,7 @@ import java.util.Map;
 import matcher.EditDistanceStrategy;
 import matcher.LCSStrategy;
 import matcher.PrefixMatchStrategy;
-import matcher.StrategyMatching;
+import matcher.MatchingStrategy;
 
 public class Dataset {
 	
@@ -16,7 +16,7 @@ public class Dataset {
 	
 	private static final float MATCHING_RATE = 0.25f;
 	
-	public Dataset(StrategyMatching strategy, float matchingRate) {
+	public Dataset(MatchingStrategy strategy, float matchingRate) {
 		this.original = GroundTruth.GT.getAllStackTraces();
 		this.newBucketing = strategy.executeMatching(this.original, matchingRate);
 	}

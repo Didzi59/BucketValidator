@@ -5,7 +5,7 @@ import java.util.List;
 
 import data.StackTrace;
 
-public class PrefixMatchStrategy extends StrategyMatching {
+public class PrefixMatchStrategy extends MatchingStrategy {
 	
 	protected float similarityScore(StackTrace s, StackTrace t) {
 		List<String> stack1 = s.getFunctionCalls();

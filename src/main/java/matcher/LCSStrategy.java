@@ -4,7 +4,7 @@ import java.util.List;
 
 import data.StackTrace;
 
-public class LCSStrategy extends StrategyMatching {
+public class LCSStrategy extends MatchingStrategy {
 
 	protected float similarityScore(StackTrace s, StackTrace t) {
 		List<String> stack1 = s.getFunctionCalls();
