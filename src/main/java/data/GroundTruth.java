@@ -15,7 +15,7 @@ public class GroundTruth {
 	private List<Bucket> buckets;
 	private Map<String,Count> counters;
 	private Count max;
-	private static final String STACKS_PATH = "src/main/resources/original_stack"; //TODO: changer chemin
+	private static final String STACKS_PATH = "src/main/resources/original_stack";
 	public static final GroundTruth GT = new GroundTruth();
 	
 	private GroundTruth() {
@@ -192,11 +192,20 @@ public class GroundTruth {
 		return res;
 	}
 	
+	public boolean isProbableFaultyFunction(String function, float rate) {
+		float intraBucketRate = this.getFalseNegative(function);
+		float interBucketRate = this.getFalsePositive(function);
+		return ((intraBucketRate*intraBucketRate + interBucketRate*interBucketRate) < (rate * rate));
+	}
+	
 	public static void main(String args[]) {
 		GroundTruth data = GroundTruth.GT;
 		//data.print();
-		for (String s : data.counters.keySet()) {
-			System.out.println(s+" => "+data.counters.get(s).getFrequency()+" => "+data.getFalsePositive(s)+" => "+data.getFalseNegative(s));
+		for (String function : data.counters.keySet()) {
+			System.out.println(function+" => "+data.counters.get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
+//			if (data.isProbableFaultyFunction(function, 0.0001f)) {
+//				System.out.println(function+" => "+data.counters.get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
+//			}
 		}
 		System.out.println(data.max.getFrequency());
 		System.out.println(data.max.getFalsePositive());

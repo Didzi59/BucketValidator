@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import matcher.EditDistanceStrategy;
 import matcher.LCSStrategy;
@@ -19,6 +21,8 @@ public class GraphCreater {
 		Dataset datasetEditDistance;//TODO change to singleton, to avoid doing the same job every time an instance is created
 		Dataset datasetPrefixMatch;
 		Dataset datasetLCS;
+		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
+		nf.setMaximumFractionDigits(5);
 		
 		//The directory that should contain the graphs
 		File results = new File("results");
@@ -31,11 +35,11 @@ public class GraphCreater {
 		File edf = new File("results/EditDistanceAverage.csv");
 		FileOutputStream edfos = new FileOutputStream(edf);
 		BufferedWriter edbw = new BufferedWriter(new OutputStreamWriter(edfos));
-		edbw.write("Step,Precision,Recall");
+		edbw.write("Step;Precision;Recall;");
 		edbw.newLine();
-		for (float rate = 0.05f; rate <= 1f; rate += 0.05f) {
+		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
 			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate);
-			edbw.write("\""+String.format("%.2f", rate)+"\","+datasetEditDistance.getAveragePrecision()+","+datasetEditDistance.getAverageRecall());
+			edbw.write(String.format("%.2f", rate)+";"+nf.format(datasetEditDistance.getAveragePrecision())+";"+nf.format(datasetEditDistance.getAverageRecall())+";");
 			edbw.newLine();
 		}
 		edbw.close();
@@ -43,11 +47,11 @@ public class GraphCreater {
 		File lcsf = new File("results/LongestCommonSubsequenceAverage.csv");
 		FileOutputStream lcsfos = new FileOutputStream(lcsf);
 		BufferedWriter lcsbw = new BufferedWriter(new OutputStreamWriter(lcsfos));
-		lcsbw.write("Step,Precision,Recall");
+		lcsbw.write("Step;Precision;Recall;");
 		lcsbw.newLine();
-		for (float rate = 0.05f; rate <= 1f; rate += 0.05f) {
+		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
 			datasetLCS = new Dataset(new LCSStrategy(), rate);
-			lcsbw.write("\""+String.format("%.2f", rate)+"\","+datasetLCS.getAveragePrecision()+","+datasetLCS.getAverageRecall());
+			lcsbw.write(String.format("%.2f", rate)+";"+nf.format(datasetLCS.getAveragePrecision())+";"+nf.format(datasetLCS.getAverageRecall())+";");
 			lcsbw.newLine();
 		}
 		lcsbw.close();
@@ -55,11 +59,11 @@ public class GraphCreater {
 		File pmf = new File("results/PrefixMatchAverage.csv");
 		FileOutputStream pmfos = new FileOutputStream(pmf);
 		BufferedWriter pmbw = new BufferedWriter(new OutputStreamWriter(pmfos));
-		pmbw.write("Step,Precision,Recall");
+		pmbw.write("Step;Precision;Recal;");
 		pmbw.newLine();
-		for (float rate = 0.05f; rate <= 1f; rate += 0.05f) {
+		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
 			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate);
-			pmbw.write("\""+String.format("%.2f", rate)+"\","+datasetPrefixMatch.getAveragePrecision()+","+datasetPrefixMatch.getAverageRecall());
+			pmbw.write(String.format("%.2f", rate)+";"+nf.format(datasetPrefixMatch.getAveragePrecision())+";"+nf.format(datasetPrefixMatch.getAverageRecall())+";");
 			pmbw.newLine();
 		}
 		pmbw.close();
