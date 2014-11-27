@@ -14,11 +14,11 @@ public class Dataset {
 	private List<StackTrace> original;
 	private List<Bucket> newBucketing;
 	
-	private static final float MATCHING_RATE = 0.25f;
+	private static final float MATCHING_RATE = 0.25f;//TODO to get rid of
 	
 	public Dataset(MatchingStrategy strategy, float matchingRate) {
 		this.original = GroundTruth.GT.getAllStackTraces();
-		this.newBucketing = strategy.executeMatching(this.original, matchingRate);
+		this.setNewBucketing(strategy.executeMatching(this.original, matchingRate));
 	}
 	
 	public float getPrecision(Bucket b) {
@@ -34,19 +34,19 @@ public class Dataset {
 	
 	public float getAveragePrecision() {
 		float avg = 0f;
-		for (Bucket b : this.newBucketing) {
+		for (Bucket b : this.getNewBucketing()) {
 			avg += this.getPrecision(b);
 		}
-		avg = avg / this.newBucketing.size();
+		avg = avg / this.getNewBucketing().size();
 		return avg;
 	}
 	
 	public float getAverageRecall() {
 		float avg = 0f;
-		for (Bucket b : this.newBucketing) {
+		for (Bucket b : this.getNewBucketing()) {
 			avg += this.getRecall(b);
 		}
-		avg = avg / this.newBucketing.size();
+		avg = avg / this.getNewBucketing().size();
 		return avg;
 	}
 	
@@ -92,7 +92,7 @@ public class Dataset {
 		Dataset data = new Dataset(new EditDistanceStrategy(), MATCHING_RATE);
 		Dataset data2 = new Dataset(new PrefixMatchStrategy(), MATCHING_RATE);
 		Dataset data3 = new Dataset(new LCSStrategy(), MATCHING_RATE);
-		for (Bucket b : data.newBucketing) {
+		for (Bucket b : data.getNewBucketing()) {
 			b.print();
 			System.out.println("d = "+getMaxDuplicateNumber(b).getMax());
 			System.out.println("ID = "+getMaxDuplicateNumber(b).getId());
@@ -101,6 +101,14 @@ public class Dataset {
 		}
 		//Bucket b = data.getOrCreateBucket("658");
 		//Normalizer.removeRecurrence(b).print();
+	}
+
+	public List<Bucket> getNewBucketing() {
+		return newBucketing;
+	}
+
+	public void setNewBucketing(List<Bucket> newBucketing) {
+		this.newBucketing = newBucketing;
 	}
 
 }

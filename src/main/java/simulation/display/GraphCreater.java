@@ -11,6 +11,7 @@ import java.util.Locale;
 import matcher.EditDistanceStrategy;
 import matcher.LCSStrategy;
 import matcher.PrefixMatchStrategy;
+import data.Bucket;
 import data.Dataset;
 import data.GroundTruth;
 
@@ -49,7 +50,7 @@ public class GraphCreater {
 		ffbw.close();
 	}
 	
-	public static void averageGraphs() throws IOException {
+	public static void averageGraphs(float step) throws IOException {
 		
 		Dataset datasetEditDistance;//TODO change to singleton, to avoid doing the same job every time an instance is created
 		Dataset datasetPrefixMatch;
@@ -64,49 +65,131 @@ public class GraphCreater {
 		if (!results.exists()) results.mkdir();
 		
 		//For each matching algorithm, a graph that depicts its precision and its recall is created
-		//Edit Distance
-		File edf = new File("results/EditDistanceAverage.csv");
-		FileOutputStream edfos = new FileOutputStream(edf);
-		BufferedWriter edbw = new BufferedWriter(new OutputStreamWriter(edfos));
-		edbw.write("Step;Precision;Recall;");
-		edbw.newLine();
-		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
+		String st = String.format(Locale.FRENCH, "%f", step);
+		File af = new File("results/average_step_"+st+".csv");
+		FileOutputStream afos = new FileOutputStream(af);
+		BufferedWriter abw = new BufferedWriter(new OutputStreamWriter(afos));
+		
+		abw.write("Step;RecallED;PrecisionED;RecallLCS;PrecisionLCS;RecallPM;PrecisionPM");
+		abw.newLine();
+		
+		for (float rate = step; rate < 1f; rate += step) {
 			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate);
-			edbw.write(String.format("%.2f", rate)+";"+nf.format(datasetEditDistance.getAveragePrecision())+";"+nf.format(datasetEditDistance.getAverageRecall())+";");
-			edbw.newLine();
-		}
-		edbw.close();
-		//Longest Common Subsequence
-		File lcsf = new File("results/LongestCommonSubsequenceAverage.csv");
-		FileOutputStream lcsfos = new FileOutputStream(lcsf);
-		BufferedWriter lcsbw = new BufferedWriter(new OutputStreamWriter(lcsfos));
-		lcsbw.write("Step;Precision;Recall;");
-		lcsbw.newLine();
-		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
 			datasetLCS = new Dataset(new LCSStrategy(), rate);
-			lcsbw.write(String.format("%.2f", rate)+";"+nf.format(datasetLCS.getAveragePrecision())+";"+nf.format(datasetLCS.getAverageRecall())+";");
-			lcsbw.newLine();
-		}
-		lcsbw.close();
-		//Prefix Match
-		File pmf = new File("results/PrefixMatchAverage.csv");
-		FileOutputStream pmfos = new FileOutputStream(pmf);
-		BufferedWriter pmbw = new BufferedWriter(new OutputStreamWriter(pmfos));
-		pmbw.write("Step;Precision;Recal;");
-		pmbw.newLine();
-		for (float rate = 0.01f; rate < 1f; rate += 0.01f) {
 			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate);
-			pmbw.write(String.format("%.2f", rate)+";"+nf.format(datasetPrefixMatch.getAveragePrecision())+";"+nf.format(datasetPrefixMatch.getAverageRecall())+";");
-			pmbw.newLine();
+			abw.write(
+					String.format("%.2f", rate)+";"
+					+nf.format(datasetEditDistance.getAverageRecall())+";"
+					+nf.format(datasetEditDistance.getAveragePrecision())+";"
+					+nf.format(datasetLCS.getAverageRecall())+";"
+					+nf.format(datasetLCS.getAveragePrecision())+";"
+					+nf.format(datasetPrefixMatch.getAverageRecall())+";"
+					+nf.format(datasetPrefixMatch.getAveragePrecision())+";"
+					);
+			abw.newLine();
 		}
-		pmbw.close();
+		abw.close();
+	}
+	
+	public static void bucketScatter() throws IOException{
+		Dataset datasetEditDistance;//TODO change to singleton, to avoid doing the same job every time an instance is created
+		Dataset datasetPrefixMatch;
+		Dataset datasetLCS;
+		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
+		nf.setMaximumFractionDigits(5);
+		
+		File bsedf = new File("results/bucketScatterEditDistance.csv");
+		File bslcsf = new File("results/bucketScatterLCS.csv");
+		File bspmf = new File("results/bucketScatterPrefixMatch.csv");
+		FileOutputStream bsedfos = new FileOutputStream(bsedf);
+		FileOutputStream bslcsfos = new FileOutputStream(bslcsf);
+		FileOutputStream bspmfos = new FileOutputStream(bspmf);
+		BufferedWriter bsedw = new BufferedWriter(new OutputStreamWriter(bsedfos));
+		BufferedWriter bslcsw = new BufferedWriter(new OutputStreamWriter(bslcsfos));
+		BufferedWriter bspmw = new BufferedWriter(new OutputStreamWriter(bspmfos));
+		
+		bsedw.write("Bucket;Recall;Precision;");
+		bslcsw.write("Bucket;Recall;Precision;");
+		bspmw.write("Bucket;Recall;Precision;");
+		bsedw.newLine();
+		bslcsw.newLine();
+		bspmw.newLine();
+		
+		for(float rate = 0.25f; rate < 1; rate += 0.25f){
+			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate);
+			datasetLCS = new Dataset(new LCSStrategy(), rate);
+			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate);
+			
+			bsedw.write(";;;");
+			bsedw.newLine();
+			bsedw.write(String.format("%.2f", rate)+";;;");
+			bsedw.newLine();
+			bsedw.write(";;;");
+			bsedw.newLine();
+			
+			bslcsw.write(";;;");
+			bslcsw.newLine();
+			bslcsw.write(String.format("%.2f", rate)+";;;");
+			bslcsw.newLine();
+			bslcsw.write(";;;");
+			bslcsw.newLine();
+			
+			bspmw.write(";;;");
+			bspmw.newLine();
+			bspmw.write(String.format("%.2f", rate)+";;;");
+			bspmw.newLine();
+			bspmw.write(";;;");
+			bspmw.newLine();
+			
+			for (Bucket b : datasetEditDistance.getNewBucketing()) {
+				float precision = datasetEditDistance.getPrecision(b);
+				float recall = datasetEditDistance.getRecall(b);
+				String bucketId = b.getId();
+				
+				bsedw.write(
+						bucketId+";"
+						+recall+";"
+						+precision+";"
+						);
+				bsedw.newLine();
+			}
+			for (Bucket b : datasetLCS.getNewBucketing()) {
+				float precision = datasetLCS.getPrecision(b);
+				float recall = datasetLCS.getRecall(b);
+				String bucketId = b.getId();
+				
+				bslcsw.write(
+						bucketId+";"
+						+recall+";"
+						+precision+";"
+						);
+				bslcsw.newLine();
+			}
+			for (Bucket b : datasetPrefixMatch.getNewBucketing()) {
+				float precision = datasetPrefixMatch.getPrecision(b);
+				float recall = datasetPrefixMatch.getRecall(b);
+				String bucketId = b.getId();
+				
+				bspmw.write(
+						bucketId+";"
+						+recall+";"
+						+precision+";"
+						);
+				bspmw.newLine();
+			}
+		}
+		bsedw.close();
+		bslcsw.close();
+		bspmw.close();
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			GraphCreater.averageGraphs();
+			GraphCreater.averageGraphs(0.01f);
+			GraphCreater.averageGraphs(0.05f);
 			GraphCreater.valuesIntraInterBucket(.0001f);
+			GraphCreater.bucketScatter();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
