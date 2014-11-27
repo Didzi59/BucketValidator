@@ -1,0 +1,32 @@
+nsDisplayBackground::Paint(nsDisplayListBuilder *,nsIRenderingContext *)
+gfxTextRun::Draw(gfxContext *,gfxPoint,unsigned int,unsigned int,gfxRect const *,gfxTextRun::PropertyProvider *,double *)
+nsDependentCString::nsDependentCString(char const *)
+nsPluginInstanceOwner::CreateWidget()
+JSString::flatten()
+gfxFont::Draw(gfxTextRun *,unsigned int,unsigned int,gfxContext *,int,gfxPoint *,gfxFont::Spacing *)
+PresShell::HandleEvent(nsIView *,nsGUIEvent *,nsEventStatus *)
+gfxGDIFont::SetupCairoFont(gfxContext *)
+nsViewManager::HandleEvent(nsView *,nsGUIEvent *)
+nsTransitionManager::WillRefresh(mozilla::TimeStamp)
+AppendUTF8toUTF16(char const *,nsAString_internal &amp;)
+strlen
+nsCommandLine::EnumerateHandlers(unsigned int (*)(nsICommandLineHandler *,nsICommandLine *,void *),void *)
+nsRefreshDriver::Notify(nsITimer *)
+cvt_s
+nsTimerImpl::Fire()
+nsWindow::ProcessKeyDownMessage(tagMSG const &amp;,int *)
+nsWeakFrame::InitInternal(nsIFrame *)
+nsEventStateManager::PostHandleEvent(nsPresContext *,nsEvent *,nsIFrame *,nsEventStatus *,nsIView *)
+nsWindow::DispatchWindowEvent(nsGUIEvent *)
+nsWindow::DispatchKeyEvent(unsigned int,unsigned short,nsTArray&lt;nsAlternativeCharCode&gt; const *,unsigned int,tagMSG const *,nsModifierKeyState const &amp;,unsigned int)
+_cairo_array_num_elements
+nsPluginHost::InstantiateEmbeddedPlugin(char const *,nsIURI *,nsIPluginInstanceOwner *)
+nsCommandLine::Run()
+nsStyleContext::Release()
+nsWindow::OnKeyDown(tagMSG const &amp;,nsModifierKeyState &amp;,int *,nsFakeCharMessage *)
+dosprintf
+JS_BeginRequest
+LogConsoleMessage
+nsTextFormatter::vsmprintf(unsigned short const *,char *)
+PresShell::HandleEventInternal(nsEvent *,nsIView *,nsEventStatus *)
+NS_ConvertUTF8toUTF16::NS_ConvertUTF8toUTF16(char const *)

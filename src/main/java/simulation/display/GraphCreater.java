@@ -12,9 +12,42 @@ import matcher.EditDistanceStrategy;
 import matcher.LCSStrategy;
 import matcher.PrefixMatchStrategy;
 import data.Dataset;
+import data.GroundTruth;
 
 public class GraphCreater {
-
+	
+	public static void valuesIntraInterBucket(float rate) throws IOException{
+		
+		GroundTruth data = GroundTruth.GT;
+		
+		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
+		nf.setMaximumFractionDigits(5);
+		
+		File fff = new File("results/FaultyFunctions.txt");
+		FileOutputStream fffos = new FileOutputStream(fff);
+		BufferedWriter ffbw = new BufferedWriter(new OutputStreamWriter(fffos));
+		
+		File iivdf = new File("results/InterIntraValues.csv");
+		FileOutputStream iivfos = new FileOutputStream(iivdf);
+		BufferedWriter iivbw = new BufferedWriter(new OutputStreamWriter(iivfos));
+		iivbw.write("Function;IntraBucket;InterBucket;Frequency");
+		iivbw.newLine();
+		
+		for (String function : data.getCounters().keySet()) {
+			float frequency = data.getCounters().get(function).getFrequency();
+			float falsePositive = data.getFalsePositive(function);
+			float falseNegative = data.getFalseNegative(function);
+			
+			iivbw.write("\""+function+"\"" +";"+nf.format(falseNegative)+";"+nf.format(falsePositive)+";"+nf.format(frequency));
+			iivbw.newLine();
+			if (data.isProbableFaultyFunction(function, rate)) {
+				ffbw.write(function);
+				ffbw.newLine();
+			}
+		}
+		iivbw.close();
+		ffbw.close();
+	}
 	
 	public static void averageGraphs() throws IOException {
 		
@@ -73,6 +106,7 @@ public class GraphCreater {
 		// TODO Auto-generated method stub
 		try {
 			GraphCreater.averageGraphs();
+			GraphCreater.valuesIntraInterBucket(.0001f);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

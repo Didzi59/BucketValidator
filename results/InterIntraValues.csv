@@ -1,0 +1,286 @@
+Function;IntraBucket;InterBucket;Frequency
+"nsDisplayBackground::Paint(nsDisplayListBuilder *,nsIRenderingContext *)";0;0;15
+"js::Interpret(JSContext *)";0,00322;0,00061;5
+"SleepEx";0,02706;0,00026;3
+"nsWebShellWindow::ExecuteCloseHandler()";0,0029;0;1
+"nsPluginHost::ReloadPlugins(int)";0,01418;0;1
+"base::MessagePumpWin::Run(base::MessagePump::Delegate *)";0,00999;0;1
+"DispatchClientMessage";0,01546;0,00314;15
+"LRPC_BASE_CCALL::DoSendReceive()";0,00999;0;1
+"nsEventListenerManager::HandleEventInternal(nsPresContext *,nsEvent *,nsIDOMEvent * *,nsPIDOMEventTarget *,unsigned int,nsEventStatus *,nsCxPusher *)";0,00354;0,00009;2
+"gfxTextRun::Draw(gfxContext *,gfxPoint,unsigned int,unsigned int,gfxRect const *,gfxTextRun::PropertyProvider *,double *)";0;0;7
+"nsDependentCString::nsDependentCString(char const *)";0;0;45
+"nsDocShell::GetInterface(nsID const &amp;,void * *)";0,0029;0;1
+"nsRunnableMethodImpl&lt;void ( nsFileUploadContentStream::*)(void),1&gt;::Run()";0,0116;0;3
+"nsPluginInstanceOwner::CreateWidget()";0;0;32
+"js::MonitorLoopEdge(JSContext *,unsigned int &amp;,js::RecordReason)";0,00064;0;1
+"__RtlUserThreadStart";0,99485;0,43907;122
+"_RtlUserThreadStart";0,99936;0,44841;123
+"JSString::flatten()";0;0;3
+"nsXPConnect::Collect()";0,00032;0;1
+"GetRealWindowOwner";0,01804;0,00044;6
+"nsJSContext::IntervalCC()";0,00032;0;1
+"CheckSpecialLocales";0,01418;0;1
+"_threadstartex";0,23164;1;186
+"RtlInitializeCriticalSection";0,00999;0;1
+"gfxFont::Draw(gfxTextRun *,unsigned int,unsigned int,gfxContext *,int,gfxPoint *,gfxFont::Spacing *)";0;0;7
+"nsJSContext::CC()";0,00032;0;1
+"nsHostResolver::GetHostToLookup(nsHostRecord * *)";0,0683;0,00306;10
+"PR_AttachThread";0,01418;0;1
+"JS_GC";0,00032;0;1
+"CloseHandle";0,00999;0;1
+"BaseThreadInitThunk";1;0,42144;120
+"PresShell::HandleEvent(nsIView *,nsGUIEvent *,nsEventStatus *)";0;0;3
+"nsHTTPCompressConv::OnStopRequest(nsIRequest *,nsISupports *,unsigned int)";0,00064;0;1
+"gfxGDIFont::SetupCairoFont(gfxContext *)";0;0;7
+"nsInputStreamReadyEvent::Run()";0,00064;0;1
+"RtlpTpTimerCallback";0,01192;0,00009;2
+"pr_root";0,23518;0,98568;185
+"nsStyleContext::~nsStyleContext()";0,00032;0;1
+"I_RpcSendReceive";0,00999;0;1
+"XRE_main";0,16302;0;22
+"js_GetPropertyHelper(JSContext *,JSObject *,int,unsigned int,js::Value *)";0,0029;0;1
+"js::TraceRecorder::relational(nanojit::LOpcode,bool)";0,00064;0;1
+"js_Flatten(JSString *)";0,00064;0;1
+"PrepareAndDispatch";0,00451;0;1
+"nsViewManager::HandleEvent(nsView *,nsGUIEvent *)";0;0;3
+"QueryDnsForFamily(unsigned short const *,unsigned int,unsigned long,sockaddr * *,unsigned int *,unsigned short * *,unsigned short)";0,00999;0;1
+"DispatchMessageW";0,03351;0,0062;16
+"nsStopPluginRunnable::Run()";0,0029;0;9
+"RecvLotsaCallsWrapper(LRPC_ADDRESS *)";0,06282;0,00035;5
+"nsScriptSecurityManager::CheckSameOriginDOMProp(nsIPrincipal *,nsIPrincipal *,unsigned int)";0,00064;0;1
+"nsWindow::ProcessMessage(unsigned int,unsigned int &amp;,long &amp;,long *)";0,00838;0,00367;17
+"nsThebesRenderingContext::DrawString(unsigned short const *,unsigned int,int,int,int,int const *)";0,00387;0;4
+"base::MessagePumpWin::RunWithDispatcher(base::MessagePump::Delegate *,base::MessagePumpWin::Dispatcher *)";0,00999;0;1
+"__tmainCRTStartup";0,16302;0;22
+"CRpcThread::WorkerLoop()";0,02706;0,00026;3
+"NSPROVIDERSTATE::LookupServiceNext(unsigned long,unsigned long *,_WSAQuerySetW *)";0,00999;0;1
+"mozilla::layers::BasicThebesLayer::PaintBuffer(gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void (*)(mozilla::layers::ThebesLayer *,gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void *),void *)";0,00387;0,00393;18
+"nsComputedDOMStyle::`vector deleting destructor'(unsigned int)";0,00032;0;1
+"base::Thread::ThreadMain()";0,02159;0,00026;4
+"nsEventDispatcher::Dispatch(nsISupports *,nsPresContext *,nsEvent *,nsIDOMEvent *,nsEventStatus *,nsDispatchingCallback *,nsCOMArray&lt;nsPIDOMEventTarget&gt; *)";0,00064;0;1
+"MessageLoop::RunInternal()";0,02159;0,00026;4
+"LookupAddressForName(unsigned short const *,unsigned short const *,int,int,int,unsigned short,int,int,addrinfoW * * *)";0,00999;0;1
+"nsDownloadScannerWatchdog::WatchdogThread(void *)";0,00999;0;1
+"nsTransitionManager::WillRefresh(mozilla::TimeStamp)";0;0;100
+"ProcessAsyncDDEMsg";0,01418;0;1
+"nsTextFrame::PaintOneShadow(unsigned int,unsigned int,nsCSSShadowItem *,PropertyProvider *,nsRect const &amp;,gfxPoint const &amp;,gfxPoint const &amp;,gfxContext *,unsigned int const &amp;)";0,00193;0;1
+"ZwDelayExecution";0,02706;0,00026;3
+"LRPC_BASE_CCALL::SendReceive(_RPC_MESSAGE *)";0,00999;0;1
+"js::Invoke(JSContext *,js::CallArgs const &amp;,unsigned int)";0,00354;0,00009;2
+"nsEventListenerManager::HandleEventSubType(nsListenerStruct *,nsIDOMEventListener *,nsIDOMEvent *,nsPIDOMEventTarget *,unsigned int,nsCxPusher *)";0,00354;0,00009;2
+"RtlpFreeHeap";0,00999;0;1
+"nsPluginStreamListenerPeer::OnStartRequest(nsIRequest *,nsISupports *)";0,02803;0;3
+"WaitForMultipleObjectsExImplementation";0,02416;0,00009;2
+"AppendUTF8toUTF16(char const *,nsAString_internal &amp;)";0;0;45
+"nsNativeAppSupportWin::HandleCommandLine(char const *,nsIFile *,unsigned int)";0,16302;0;23
+"js_ValueToStringId(JSContext *,js::Value const &amp;,int *)";0,00064;0;1
+"ProcessSyncDDEMessage";0,01418;0;1
+"strlen";0;0;45
+"DOMGCCallback";0,00032;0;1
+"nsCommandLine::EnumerateHandlers(unsigned int (*)(nsICommandLineHandler *,nsICommandLine *,void *),void *)";0;0;45
+"RtlIsTextUnicode";0,03769;0,00017;3
+"nsEventTargetChainItem::HandleEvent(nsEventChainPostVisitor &amp;,unsigned int,int,nsCxPusher *)";0,00354;0,00009;2
+"PciiFromHandle";0,01418;0;1
+"Query_PrivateExW";0,00999;0;1
+"nsWindow::OnPaint(HDC__ *,unsigned int)";0,00387;0,00393;18
+"nsInputStreamPump::OnInputStreamReady(nsIAsyncInputStream *)";0,00064;0;1
+"js::InternalInvoke(JSContext *,js::Value const &amp;,js::Value const &amp;,unsigned int,unsigned int,js::Value *,js::Value *)";0,00354;0,00009;2
+"nsRefreshDriver::Notify(nsITimer *)";0;0;100
+"wcstombs";0,01418;0;1
+"XPCJSRuntime::GCCallback(JSContext *,JSGCStatus)";0,00032;0;1
+"cvt_s";0;0;45
+"nsTimerImpl::Fire()";0;0;100
+"NtAlpcSendWaitReceivePort";0,00999;0;1
+"NtUserGetMessage";0,02771;0;2
+"CallResolveOp";0,0029;0;1
+"NSQUERY::LookupServiceNext(unsigned long,unsigned long *,_WSAQuerySetW *)";0,00999;0;1
+"nsInputStreamPump::OnStateStop()";0,00064;0;1
+"SpontaneousServerMessage";0,01418;0;1
+"nsCycleCollectingAutoRefCnt::decr(nsISupports *)";0,00451;0;1
+"nsWindowRoot::PreHandleEvent(nsEventChainPreVisitor &amp;)";0,0029;0;1
+"PR_WaitCondVar";0,0683;0,00306;10
+"ZwGetContextThread";0,04671;0,00061;5
+"CloseHandleImplementation";0,0145;0,00009;2
+"mciwindow";0,02771;0;2
+"nsWindow::WindowProcInternal(HWND__ *,unsigned int,unsigned int,long)";0,00838;0,00812;20
+"nsRuleNode::ComputeBorderData(void *,nsCSSStruct const &amp;,nsStyleContext *,nsRuleNode *,nsRuleNode::RuleDetail,int)";0,00064;0;1
+"_PR_WaitCondVar";0,23164;0,08179;56
+"LRPC_ADDRESS::ReceiveLotsaCalls()";0,02771;0;2
+"RtlpFindEntry";0,01418;0;1
+"nsNativeAppSupportWin::HandleDDENotification(unsigned int,unsigned int,HCONV__ *,HSZ__ *,HSZ__ *,HDDEDATA__ *,unsigned long,unsigned long)";0,01418;0;1
+"QueryDns(unsigned short const *,unsigned int,sockaddr_in * *,unsigned int *,sockaddr_in6 * *,unsigned int *,unsigned short * *,int,unsigned short)";0,00999;0;1
+"LRPC_CASSOCIATION::AlpcSendWaitReceivePort(unsigned long,_PORT_MESSAGE *,_ALPC_MESSAGE_ATTRIBUTES *,_PORT_MESSAGE *,unsigned long *,_ALPC_MESSAGE_ATTRIBUTES *,_LARGE_INTEGER *)";0,00999;0;1
+"ZwWaitForWorkViaWorkerFactory";0,03544;0,00044;4
+"nsJSNPRuntime::OnPluginDestroy(_NPP *)";0,0029;0;9
+"nsScriptLoader::OnStreamComplete(nsIStreamLoader *,nsISupports *,unsigned int,unsigned int,unsigned char const *)";0,00064;0;1
+"nsWindow::Invalidate(nsIntRect const &amp;,int)";0,0116;0;3
+"mozilla::layers::BasicLayerManager::EndTransaction(void (*)(mozilla::layers::ThebesLayer *,gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void *),void *)";0,00387;0,00393;18
+"XPC_WN_NoHelper_Resolve";0,0029;0;1
+"js::PropertyTree::getChild(JSContext *,JSScopeProperty *,unsigned long,JSScopeProperty const &amp;)";0,00064;0;1
+"ApplyStringProp(HWND__ *,unsigned short const *,unsigned short)";0,0029;0;1
+"DoStopPlugin";0,0029;0;9
+"XPCNativeMember::Resolve(XPCCallContext &amp;,XPCNativeInterface *)";0,0029;0;1
+"Dns_NSPLookupServiceNext";0,00999;0;1
+"nsWindow::WindowProc(HWND__ *,unsigned int,unsigned int,long)";0,00838;0,00812;20
+"Rnr_DoDnsLookup";0,00999;0;1
+"nsScriptLoader::ProcessRequest(nsScriptLoadRequest *)";0,00064;0;1
+"nsWindow::ProcessKeyDownMessage(tagMSG const &amp;,int *)";0;0;3
+"nsGlobalChromeWindow::QueryInterface(nsID const &amp;,void * *)";0,0029;0;1
+"DoDeferredRelease&lt;nsISupports *&gt;";0,00032;0;1
+"WaitForMultipleObjects";0,02416;0,00009;2
+"PresShell::Paint(nsIView *,nsIView *,nsIWidget *,nsRegion const &amp;,nsIntRegion const &amp;,int,int)";0,00387;0,00393;18
+"nsTextFrame::DrawText(gfxContext *,gfxPoint const &amp;,unsigned int,unsigned int,gfxRect const *,PropertyProvider *,double &amp;,int)";0,00387;0;3
+"nsComputedDOMStyle::GetPropertyValue(nsAString_internal const &amp;,nsAString_internal &amp;)";0,00032;0;1
+"NtWaitForSingleObject";0,20876;0,01624;29
+"nsWeakFrame::InitInternal(nsIFrame *)";0;0;3
+"nsJSContext::CallEventHandler(nsISupports *,void *,void *,nsIArray *,nsIVariant * *)";0,00354;0,00009;2
+"NtRemoveIoCompletion";0,03254;0,00026;4
+"MessageWindow::WindowProc(HWND__ *,unsigned int,unsigned int,long)";0,16302;0;22
+"InternalCallWinProc";0,02255;0,00986;21
+"nsEventStateManager::PostHandleEvent(nsPresContext *,nsEvent *,nsIFrame *,nsEventStatus *,nsIView *)";0;0;3
+"mozilla::layers::BasicThebesLayer::Paint(gfxContext *,void (*)(mozilla::layers::ThebesLayer *,gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void *),void *,float)";0,00387;0,00393;18
+"nsThread::ProcessNextEvent(int,int *)";0,25934;0,81538;173
+"nsWindow::DispatchEvent(nsGUIEvent *,nsEventStatus &amp;)";0,00387;0,00864;21
+"OutputDebugStringA";0,01418;0;1
+"nsHttpChannel::OnStopRequest(nsIRequest *,nsISupports *,unsigned int)";0,00064;0;1
+"ShimDnsQueryEx";0,00999;0;1
+"`anonymous namespace'::ThreadFunc(void *)";0,02159;0,00026;4
+"js_GC(JSContext *,JSGCInvocationKind)";0,00032;0;1
+"nsObjectLoadingContent::OnStartRequest(nsIRequest *,nsISupports *)";0,02803;0;3
+"UserCallDDECallback";0,01418;0;1
+"NdrSendReceive";0,00999;0;1
+"XPCConvert::NativeData2JS(XPCLazyCallContext &amp;,unsigned __int64 *,void const *,nsXPTType const &amp;,nsID const *,JSObject *,unsigned int *)";0,00032;0;1
+"nsViewManager::DispatchEvent(nsGUIEvent *,nsIView *,nsEventStatus *)";0,00387;0,00864;21
+"nsNPAPIPluginInstance::Stop()";0,0029;0;9
+"BaseCachedThreadRoutine(CACHED_THREAD *)";0,06282;0,00035;5
+"_PR_NativeRunThread";0,23518;0,98568;185
+"CAppInfo::OnWindowDestroyed(HWND__ *)";0,0029;0;1
+"nsComputedDOMStyle::Release()";0,00032;0;1
+"nsLayoutUtils::PaintFrame(nsIRenderingContext *,nsIFrame *,nsRegion const &amp;,unsigned int,unsigned int)";0,00387;0,00393;18
+"MessageLoop::Run()";0,02159;0,00026;4
+"WSALookupServiceNextW";0,00999;0;1
+"nsWindow::DispatchWindowEvent(nsGUIEvent *)";0;0;3
+"nsWindow::DispatchWindowEvent(nsGUIEvent *,nsEventStatus &amp;)";0,00387;0,00393;18
+"nsScriptLoader::EvaluateScript(nsScriptLoadRequest *,nsString const &amp;)";0,00064;0;1
+"nsWindow::DispatchStarvedPaints(HWND__ *,long)";0,00644;0,00009;2
+"DefWindowProcW";0,0029;0;1
+"nsGlobalWindow::DispatchDOMEvent(nsEvent *,nsIDOMEvent *,nsPresContext *,nsEventStatus *)";0,0029;0;1
+"js_str_charAt(JSContext *,unsigned int,js::Value *)";0,00064;0;1
+"SockAsyncThread";0,02384;0,00017;3
+"nsWindow::DispatchKeyEvent(unsigned int,unsigned short,nsTArray&lt;nsAlternativeCharCode&gt; const *,unsigned int,tagMSG const *,nsModifierKeyState const &amp;,unsigned int)";0;0;3
+"nsBidiPresUtils::ProcessTextForRenderingContext(unsigned short const *,int,nsBidiDirection,nsPresContext *,nsIRenderingContext &amp;,nsBidiPresUtils::Mode,int,int,nsBidiPositionResolve *,int,int *)";0,00387;0;4
+"js_GetClassPrototype(JSContext *,JSObject *,JSProtoKey,JSObject * *,js::Class *)";0,00064;0;1
+"nsTimerEvent::Run()";0,00032;0,00873;101
+"nsViewManager::Refresh(nsView *,nsIWidget *,nsIntRegion const &amp;,unsigned int)";0,00387;0,00393;18
+"nsHTMLInputElement::PostHandleEvent(nsEventChainPostVisitor &amp;)";0,00451;0;1
+"base::MessagePumpForIO::WaitForIOCompletion(unsigned long,base::MessagePumpForIO::IOHandler *)";0,00999;0;1
+"nsThebesRenderingContext::DrawStringInternal(unsigned short const *,unsigned int,int,int,int,int const *)";0,00387;0;4
+"nsWindow::DealWithPopups(HWND__ *,unsigned int,unsigned int,long,long *)";0,01933;0,00087;7
+"nsIDOMCSSStyleDeclaration_GetPropertyValue";0,00032;0;1
+"nsJSContext::EvaluateString(nsAString_internal const &amp;,void *,nsIPrincipal *,char const *,unsigned int,unsigned int,nsAString_internal *,int *)";0,00064;0;1
+"CRpcThreadCache::RpcWorkerThreadEntry(void *)";0,02706;0,00026;3
+"_cairo_array_num_elements";0;0;7
+"nsThebesFontMetrics::DrawString(unsigned short const *,unsigned int,int,int,int,int const *,nsThebesRenderingContext *)";0,00387;0;4
+"nsStyleContext::Destroy()";0,00032;0;1
+"ZwRemoveIoCompletion";0,00451;0;1
+"nsPluginHost::InstantiateEmbeddedPlugin(char const *,nsIURI *,nsIPluginInstanceOwner *)";0;0;32
+"_PR_MD_WAIT_CV";0,23164;0,08179;56
+"_callthreadstartex";0,23164;1;186
+"NtUserGetDC";0,00838;0;2
+"ThreadStartRoutine(THREAD *)";0,06282;0,00035;5
+"WaitForSingleObjectEx";0,22423;0,08319;57
+"base::MessagePumpForIO::DoRunLoop()";0,00999;0;1
+"KiUserApcDispatcher";0,01997;0,00061;8
+"DefinePropertyIfFound";0,0029;0;1
+"nsThread::ThreadFunc(void *)";0,25934;0,81538;173
+"nsIRenderingContextBidiProcessor::DrawText(int,int)";0,00387;0;4
+"NtGetContextThread";0,00999;0;1
+"SvSpontExecute";0,01418;0;1
+"LdrpGetShimEngineInterface";0,01418;0;1
+"GetAddrInfoW";0,00999;0;1
+"nsBaseAppShell::OnProcessNextEvent(nsIThreadInternal *,int,unsigned int)";0,03351;0,0062;16
+"nsCommandLine::Run()";0;0;45
+"nsDisplayList::PaintForFrame(nsDisplayListBuilder *,nsIRenderingContext *,nsIFrame *,unsigned int)";0,00387;0,00393;18
+"ZwWaitForSingleObject";0,19942;0,02208;29
+"Sleep";0,02706;0,00026;3
+"CROIDTable::WorkerThreadLoop(void *)";0,02706;0,00026;3
+"GetProcessHeap";0,02416;0,00009;2
+"nsStyleContext::Release()";0;0;2
+"GetMessageA";0,01418;0;1
+"nsHostResolver::ThreadFunc(void *)";0,07571;0,00358;11
+"NtReplyWaitReceivePortEx";0,02416;0,00009;2
+"PR_Wait";0,24195;0,04923;46
+"nsWindow::OnKeyDown(tagMSG const &amp;,nsModifierKeyState &amp;,int *,nsFakeCharMessage *)";0;0;3
+"GenAllocateModuleObject(_MINIDUMP_STATE *,_INTERNAL_PROCESS *,unsigned short *,unsigned __int64,unsigned long,_INTERNAL_MODULE * *)";0,0145;0,00009;2
+"wmain";0,16302;0;22
+"NdrClientCall2";0,00999;0;1
+"dosprintf";0;0;45
+"NtWaitForMultipleObjects";0,02416;0,00009;2
+"WaitForSingleObjectExImplementation";0,16688;0,01231;22
+"nsObjectFrame::InstantiatePlugin(nsIPluginHost *,char const *,nsIURI *)";0,02803;0;29
+"JS_EvaluateUCScriptForPrincipals";0,00064;0;1
+"nsComputedDOMStyle::GetPropertyCSSValue(nsAString_internal const &amp;,nsIDOMCSSValue * *)";0,00032;0;1
+"NSPROVIDER::NSPLookupServiceNext(void *,unsigned long,unsigned long *,_WSAQuerySetW *)";0,00999;0;1
+"JS_BeginRequest";0;0;10
+"nsTextFrame::PaintText(nsIRenderingContext *,nsPoint,nsRect const &amp;)";0,00387;0;3
+"Win32LiveSystemProvider::OpenMapping(unsigned short const *,unsigned long *,unsigned short *,unsigned long,void * *)";0,0145;0,00009;2
+"_SEH_epilog4_GS";0,01418;0;1
+"LogConsoleMessage";0;0;45
+"nsAppShell::ProcessNextNativeEvent(int)";0,00451;0;1
+"base::MessagePumpForIO::WaitForWork()";0,00999;0;1
+"UserCallWinProcCheckWow";0,03544;0,00463;13
+"HandleEvent";0,00387;0,00864;21
+"BaseProcessStart";0,15915;0;19
+"nsViewManager::RenderViews(nsView *,nsIWidget *,nsRegion const &amp;,nsIntRegion const &amp;,int,int)";0,00387;0,00393;18
+"R_ResolverQuery";0,00999;0;1
+"MessageLoop::RunHandler()";0,02159;0,00026;4
+"getaddrinfo";0,00999;0;1
+"js::Execute(JSContext *,JSObject *,JSScript *,JSStackFrame *,unsigned int,js::Value *)";0,00064;0;1
+"nsJSEventListener::HandleEvent(nsIDOMEvent *)";0,00354;0,00009;2
+"KiUserCallbackDispatcher";0,01546;0,00314;15
+"nsThreadPool::Run()";0,24485;0,03745;41
+"ZwReplyWaitReceivePortEx";0,04059;0;3
+"PR_EnterMonitor";0,00032;0;1
+"nsButtonFrameRenderer::GetButtonOuterFocusBorderAndPadding()";0,00032;0;1
+"mozilla::ipc::MessagePump::Run(base::MessagePump::Delegate *)";0,0116;0;3
+"SaBlob_Query";0,00999;0;1
+"js::InvokeCommon&lt;int (__cdecl*)(JSContext *,JSObject *,unsigned int,js::Value *,js::Value *)&gt;";0,00354;0,00009;2
+"mozilla::FrameLayerBuilder::DrawThebesLayer(mozilla::layers::ThebesLayer *,gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void *)";0,00387;0,00393;18
+"js_AtomizeString(JSContext *,JSString *,unsigned int)";0,00064;0;1
+"nsWebShellWindow::HandleEvent(nsGUIEvent *)";0,0029;0;1
+"CombinedQueryEx";0,00999;0;1
+"arena_ralloc";0,01418;0;1
+"EnumChildWindows";0,00644;0,00009;2
+"js::Parser::statement()";0,00064;0;1
+"KiFastSystemCallRet";0,11952;0,15573;77
+"LRPC_CCALL::SendReceive(_RPC_MESSAGE *)";0,00999;0;1
+"RpcpPurgeEEInfoFromThreadIfNecessary(THREAD *)";0,03769;0,00017;3
+"JSAutoRequest::JSAutoRequest(JSContext *)";0,0029;0;9
+"NtWaitForWorkViaWorkerFactory";0,03351;0,00017;3
+"GCTimerFired(nsITimer *,void *)";0,00032;0;1
+"nsTextFormatter::vsmprintf(unsigned short const *,char *)";0;0;45
+"VerpCheckBlock32";0,01418;0;1
+"PresShell::HandleEventInternal(nsEvent *,nsIView *,nsEventStatus *)";0;0;3
+"DnsQueryExW";0,00999;0;1
+"base::ThreadLocalPlatform::SetValueInSlot(int &amp;,void *)";0,02159;0,00026;4
+"PR_GetAddrInfoByName";0,00999;0;1
+"base::MessagePumpForIO::GetIOItem(unsigned long,base::MessagePumpForIO::IOItem *)";0,00999;0;1
+"TppTimerpSet";0,01933;0;2
+"_PR_NotifyJoinWaiters";0,01418;0;1
+"nsXPConnect::GarbageCollect()";0,00032;0;1
+"WaitForSingleObject";0,22938;0,08092;56
+"nsStreamLoader::OnStopRequest(nsIRequest *,nsISupports *,unsigned int)";0,00064;0;1
+"__fnDWORD";0,01546;0,00314;15
+"DispatchMessageWorker";0,02255;0,00096;6
+"NS_ConvertUTF8toUTF16::NS_ConvertUTF8toUTF16(char const *)";0;0;45
+"nsIDOMCSSStyleDeclaration_GetPropertyValue_tn";0,00032;0;1
+"nsScriptLoader::ProcessPendingRequests()";0,00064;0;1
+"BaseThreadStart";0,99936;0,28151;94
+"nsDisplayText::Paint(nsDisplayListBuilder *,nsIRenderingContext *)";0,00387;0;3
+"mozilla::layers::BasicLayerManager::PaintLayer(mozilla::layers::Layer *,void (*)(mozilla::layers::ThebesLayer *,gfxContext *,nsIntRegion const &amp;,nsIntRegion const &amp;,void *),void *,float)";0,00387;0,00393;18
+"NdrpSendReceive";0,00999;0;1
+"RtlpWorkerThread";0,0145;0,00009;2
+"_PR_MD_WAIT";0,01418;0;1
+"NtClose";0,03254;0,00026;4
+"nsBidiPresUtils::ProcessText(unsigned short const *,int,nsBidiDirection,nsPresContext *,nsBidiPresUtils::BidiProcessor &amp;,nsBidiPresUtils::Mode,nsBidiPositionResolve *,int,int *)";0,00387;0;4

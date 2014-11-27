@@ -20,7 +20,7 @@ public class GroundTruth {
 	
 	private GroundTruth() {
 		this.buckets = new LinkedList<Bucket>();
-		this.counters = new HashMap<String, Count>();
+		this.setCounters(new HashMap<String, Count>());
 		this.max = new Count();
 		File folder = new File(STACKS_PATH);
 		this.parseFolder(folder);
@@ -45,13 +45,13 @@ public class GroundTruth {
 		for (String function : s.getFunctionCalls()) {
 			// Count already exist
 			Count c;
-			if (this.counters.containsKey(function)) {
-				c = this.counters.get(function);
+			if (this.getCounters().containsKey(function)) {
+				c = this.getCounters().get(function);
 				c.incrementFrequency();
 			} else {
 				c = new Count();
 				c.incrementFrequency();
-				this.counters.put(function, c);
+				this.getCounters().put(function, c);
 			}
 			if (c.getFrequency() > this.max.getFrequency()) this.max.incrementFrequency();
 		}
@@ -63,8 +63,8 @@ public class GroundTruth {
 			for (String function : s.getFunctionCalls()) {
 				// Count already exist
 				Count c;
-				if (this.counters.containsKey(function)) {
-					c = this.counters.get(function);
+				if (this.getCounters().containsKey(function)) {
+					c = this.getCounters().get(function);
 					if (!t.getFunctionCalls().contains(function)) {
 						c.incrementFalseNegative();
 					}
@@ -73,15 +73,15 @@ public class GroundTruth {
 					if (!t.getFunctionCalls().contains(function)) {
 						c.incrementFalseNegative();
 					}
-					this.counters.put(function, c);
+					this.getCounters().put(function, c);
 				}
 				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
 			}
 			for (String function : t.getFunctionCalls()) {
 				// Count already exist
 				Count c;
-				if (this.counters.containsKey(function)) {
-					c = this.counters.get(function);
+				if (this.getCounters().containsKey(function)) {
+					c = this.getCounters().get(function);
 					if (!s.getFunctionCalls().contains(function)) {
 						c.incrementFalseNegative();
 					}
@@ -90,7 +90,7 @@ public class GroundTruth {
 					if (!s.getFunctionCalls().contains(function)) {
 						c.incrementFalseNegative();
 					}
-					this.counters.put(function, c);
+					this.getCounters().put(function, c);
 				}
 				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
 			}
@@ -99,8 +99,8 @@ public class GroundTruth {
 			for (String function : s.getFunctionCalls()) {
 				// Count already exist
 				Count c;
-				if (this.counters.containsKey(function)) {
-					c = this.counters.get(function);
+				if (this.getCounters().containsKey(function)) {
+					c = this.getCounters().get(function);
 					if (t.getFunctionCalls().contains(function)) {
 						c.incrementFalsePositive();
 					}
@@ -109,7 +109,7 @@ public class GroundTruth {
 					if (t.getFunctionCalls().contains(function)) {
 						c.incrementFalsePositive();
 					}
-					this.counters.put(function, c);
+					this.getCounters().put(function, c);
 				}
 				if (c.getFalsePositive() > this.max.getFalsePositive()) this.max.incrementFalsePositive();				
 			}
@@ -174,8 +174,8 @@ public class GroundTruth {
 	
 	public float getFalsePositive(String function) throws NoSuchElementException {
 		float res = 0f;
-		if (this.counters.containsKey(function)) {
-			res = (float) this.counters.get(function).getFalsePositive() / this.max.getFalsePositive();
+		if (this.getCounters().containsKey(function)) {
+			res = (float) this.getCounters().get(function).getFalsePositive() / this.max.getFalsePositive();
 		} else {
 			throw new NoSuchElementException("This function is not found: "+function);
 		}
@@ -184,8 +184,8 @@ public class GroundTruth {
 	
 	public float getFalseNegative(String function) throws NoSuchElementException {
 		float res = 0f;
-		if (this.counters.containsKey(function)) {
-			res = (float) this.counters.get(function).getFalseNegative() / this.max.getFalseNegative();
+		if (this.getCounters().containsKey(function)) {
+			res = (float) this.getCounters().get(function).getFalseNegative() / this.max.getFalseNegative();
 		} else {
 			throw new NoSuchElementException("This function is not found: "+function);
 		}
@@ -201,8 +201,8 @@ public class GroundTruth {
 	public static void main(String args[]) {
 		GroundTruth data = GroundTruth.GT;
 		//data.print();
-		for (String function : data.counters.keySet()) {
-			System.out.println(function+" => "+data.counters.get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
+		for (String function : data.getCounters().keySet()) {
+			System.out.println(function+" => "+data.getCounters().get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
 //			if (data.isProbableFaultyFunction(function, 0.0001f)) {
 //				System.out.println(function+" => "+data.counters.get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
 //			}
@@ -212,5 +212,13 @@ public class GroundTruth {
 		System.out.println(data.max.getFalseNegative());
 		//Bucket b = data.getOrCreateBucket("658");
 		//Normalizer.removeRecurrence(b).print();
+	}
+
+	public Map<String,Count> getCounters() {
+		return counters;
+	}
+
+	public void setCounters(Map<String,Count> counters) {
+		this.counters = counters;
 	}
 }
