@@ -14,19 +14,23 @@ public class GroundTruth {
 	
 	private List<Bucket> buckets;
 	private Map<String,Count> counters;
-	private Count max;
-	private static final String STACKS_PATH = "src/main/resources/original_stack";
-	public static final GroundTruth GT = new GroundTruth();
+	private Count max;//all the maximum values (false negative/positive and frequency count)
+	//private static final String STACKS_PATH = "src/main/resources/original_stack";
 	
-	private GroundTruth() {
+	public int before = 0;
+	public int after = 0;
+	
+	public GroundTruth(String path) {
 		this.buckets = new LinkedList<Bucket>();
 		this.setCounters(new HashMap<String, Count>());
 		this.max = new Count();
-		File folder = new File(STACKS_PATH);
+		File folder = new File(path);//STACKS_PATH
 		this.parseFolder(folder);
 		this.computeCounters();
 	}
-	
+	/**
+	 * Compute the counters
+	 */
 	private void computeCounters() {
 		List<StackTrace> listAll = new LinkedList<StackTrace>();
 		for (Bucket b : this.buckets) {
@@ -41,6 +45,10 @@ public class GroundTruth {
 		}
 	}
 
+	/**
+	 * Computes the frequency for a stack
+	 * @param s the stacktrace
+	 */
 	private void computeFrequency(StackTrace s) {
 		for (String function : s.getFunctionCalls()) {
 			// Count already exist
@@ -57,6 +65,11 @@ public class GroundTruth {
 		}
 	}
 
+	/**
+	 * Compute inter intra bucket for 2 stacks
+	 * @param s the first stack
+	 * @param t the second stack
+	 */
 	private void computeFalseCounters(StackTrace s, StackTrace t) {	
 		if (s.getOriginalBucket().equals(t.getOriginalBucket())) { 
 			// Same bucket
@@ -66,16 +79,16 @@ public class GroundTruth {
 				if (this.getCounters().containsKey(function)) {
 					c = this.getCounters().get(function);
 					if (!t.getFunctionCalls().contains(function)) {
-						c.incrementFalseNegative();
+						c.incrementIntraBucket();
 					}
 				} else {
 					c = new Count();
 					if (!t.getFunctionCalls().contains(function)) {
-						c.incrementFalseNegative();
+						c.incrementIntraBucket();
 					}
 					this.getCounters().put(function, c);
 				}
-				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
+				if (c.getIntraBucket() > this.max.getIntraBucket()) this.max.incrementIntraBucket();				
 			}
 			for (String function : t.getFunctionCalls()) {
 				// Count already exist
@@ -83,16 +96,16 @@ public class GroundTruth {
 				if (this.getCounters().containsKey(function)) {
 					c = this.getCounters().get(function);
 					if (!s.getFunctionCalls().contains(function)) {
-						c.incrementFalseNegative();
+						c.incrementIntraBucket();
 					}
 				} else {
 					c = new Count();
 					if (!s.getFunctionCalls().contains(function)) {
-						c.incrementFalseNegative();
+						c.incrementIntraBucket();
 					}
 					this.getCounters().put(function, c);
 				}
-				if (c.getFalseNegative() > this.max.getFalseNegative()) this.max.incrementFalseNegative();				
+				if (c.getIntraBucket() > this.max.getIntraBucket()) this.max.incrementIntraBucket();				
 			}
 		} else { 
 			// Distinct bucket
@@ -102,41 +115,58 @@ public class GroundTruth {
 				if (this.getCounters().containsKey(function)) {
 					c = this.getCounters().get(function);
 					if (t.getFunctionCalls().contains(function)) {
-						c.incrementFalsePositive();
+						c.incrementInterBucket();
 					}
 				} else {
 					c = new Count();
 					if (t.getFunctionCalls().contains(function)) {
-						c.incrementFalsePositive();
+						c.incrementInterBucket();
 					}
 					this.getCounters().put(function, c);
 				}
-				if (c.getFalsePositive() > this.max.getFalsePositive()) this.max.incrementFalsePositive();				
+				if (c.getInterBucket() > this.max.getInterBucket()) this.max.incrementInterBucket();				
 			}
 		}
 	}
 
-	public void parseFolder(File folder) {
+	/**
+	 * Parse all the folder and creates buckets and its stacks
+	 * @param folder the folder containing the files to be parsed
+	 */
+	private void parseFolder(File folder) {
 		if (folder.isDirectory()) {
 			File[] list = folder.listFiles();
 			if (list != null){
 				for (int i = 0; i < list.length; i++) {
-					// Appel récursif sur les sous-répertoires
 					parseFolder(list[i]);
 				} 
 			} else {
 				System.err.println(folder + " : Reading error.");
 			}
 		} else {
-			//System.out.println("*********************************" +folder.getAbsolutePath());
-			Bucket bucket = this.getOrCreateBucket(folder.getParentFile().getName());	
+			Bucket bucket = this.getOrCreateBucket(folder.getParentFile().getName());
 			StackTrace stack = Parser.parse(folder);
+			this.before += stack.getFunctionCalls().size();
 			stack = Normalizer.removeRecurrence(stack);
+			this.after += stack.getFunctionCalls().size();
 			stack.setOriginalBucket(bucket);
 			bucket.addStackTrace(stack);
 		}
 	}
 	
+	/**
+	 * Prints on the screen how many functions are removed
+	 */
+	public void printRecursionRemoval(){
+		float res = ((float) (this.before - this.after)/this.before) * 100;
+		System.out.println("The stacks after the recursion removal are " + res + "% smaller than those before recursion removal");
+	}
+	
+	/**
+	 * Creates a bucket or returns a bucket given an id
+	 * @param id the id of the bucket
+	 * @return the bucket
+	 */
 	private Bucket getOrCreateBucket(String id) {
 		for (Bucket b : this.buckets) {
 			if (b.getId().equals(id)) return b;
@@ -146,6 +176,12 @@ public class GroundTruth {
 		return b;
 	}
 	
+	/**
+	 * Gets a bucket by its id
+	 * @param id the id of the bucket
+	 * @return a bucket
+	 * @throws NoSuchElementException
+	 */
 	public Bucket getBucketById(String id) throws NoSuchElementException {
 		for (Bucket b : this.buckets) {
 			if (b.getId().equals(id)) return b;
@@ -153,10 +189,18 @@ public class GroundTruth {
 		throw new NoSuchElementException("No bucket with this id: "+id);
 	}
 	
+	/**
+	 * Get all the buckets
+	 * @return a list of the buckets
+	 */
 	public List<Bucket> getBuckets() {
 		return buckets;
 	}
 	
+	/**
+	 * Returns all the call stacks
+	 * @return a list of all the call stacks
+	 */
 	public List<StackTrace> getAllStackTraces() {
 		List<StackTrace> res = new LinkedList<StackTrace>();
 		for (Bucket b : this.buckets) {
@@ -164,60 +208,63 @@ public class GroundTruth {
 		}
 		return res;
 	}
-
-	public void print() {
-		System.out.println("*********** DATASET ***********");
-		for (Bucket b : this.buckets) {
-			b.print();
-		}
-	}
 	
-	public float getFalsePositive(String function) throws NoSuchElementException {
+	/**
+	 * 
+	 * @param function
+	 * @return
+	 * @throws NoSuchElementException
+	 */
+	public float getInterBucket(String function) throws NoSuchElementException {
 		float res = 0f;
 		if (this.getCounters().containsKey(function)) {
-			res = (float) this.getCounters().get(function).getFalsePositive() / this.max.getFalsePositive();
+			res = (float) this.getCounters().get(function).getInterBucket() / this.max.getInterBucket();
 		} else {
 			throw new NoSuchElementException("This function is not found: "+function);
 		}
 		return res;
 	}
 	
-	public float getFalseNegative(String function) throws NoSuchElementException {
+	/**
+	 * Gets the intra bucket corresponding to a function
+	 * @param function
+	 * @return
+	 * @throws NoSuchElementException
+	 */
+	public float getIntraBucket(String function) throws NoSuchElementException {
 		float res = 0f;
 		if (this.getCounters().containsKey(function)) {
-			res = (float) this.getCounters().get(function).getFalseNegative() / this.max.getFalseNegative();
+			res = (float) this.getCounters().get(function).getIntraBucket() / this.max.getIntraBucket();
 		} else {
 			throw new NoSuchElementException("This function is not found: "+function);
 		}
 		return res;
 	}
 	
+	/**
+	 * Tells if a function is a probably faulty
+	 * @param function the function suspected
+	 * @param rate the rate
+	 * @return true if and only if the function is faulty
+	 */
 	public boolean isProbableFaultyFunction(String function, float rate) {
-		float intraBucketRate = this.getFalseNegative(function);
-		float interBucketRate = this.getFalsePositive(function);
+		float intraBucketRate = this.getIntraBucket(function);
+		float interBucketRate = this.getInterBucket(function);
 		return ((intraBucketRate*intraBucketRate + interBucketRate*interBucketRate) < (rate * rate));
 	}
-	
-	public static void main(String args[]) {
-		GroundTruth data = GroundTruth.GT;
-		//data.print();
-		for (String function : data.getCounters().keySet()) {
-			System.out.println(function+" => "+data.getCounters().get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
-//			if (data.isProbableFaultyFunction(function, 0.0001f)) {
-//				System.out.println(function+" => "+data.counters.get(function).getFrequency()+" => "+data.getFalsePositive(function)+" => "+data.getFalseNegative(function));
-//			}
-		}
-		System.out.println(data.max.getFrequency());
-		System.out.println(data.max.getFalsePositive());
-		System.out.println(data.max.getFalseNegative());
-		//Bucket b = data.getOrCreateBucket("658");
-		//Normalizer.removeRecurrence(b).print();
-	}
 
+	/**
+	 * Gets the counters
+	 * @return the counters
+	 */
 	public Map<String,Count> getCounters() {
 		return counters;
 	}
 
+	/**
+	 * Set the counters
+	 * @param counters
+	 */
 	public void setCounters(Map<String,Count> counters) {
 		this.counters = counters;
 	}

@@ -13,6 +13,11 @@ public class Parser {
 	private static final String FUNCTION_NAME_PATTERN = "^([0-9]+\\|){2}([^|]*\\|)([^|]+)\\|";
 	private static final int FUNCTION_NAME_GROUP = 3;
 
+	/**
+	 * Parse a file that contains the stack functions names into a stack 
+	 * @param file a file that contains the stack
+	 * @return the corresponding stack trace
+	 */
 	public static StackTrace parse(File file) {
 		String filename = file.getName();
 		StackTrace stack = new StackTrace(filename.substring(0, filename.length()-4));
@@ -27,7 +32,6 @@ public class Parser {
 			    Matcher matcher = pattern.matcher(line);
 			    if (matcher.find()) {
 			    	String functionCall = matcher.group(FUNCTION_NAME_GROUP);
-			    	//System.out.println(functionCall);
 			    	stack.addCall(functionCall);
 			    }
 			}	 

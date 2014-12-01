@@ -15,33 +15,55 @@ import data.Bucket;
 import data.Dataset;
 import data.GroundTruth;
 
-public class GraphCreater {
+public class FileGenerator {
 	
-	public static void valuesIntraInterBucket(float rate) throws IOException{
+	private String destination;
+	private GroundTruth gt;
+	
+	public FileGenerator(String destination, GroundTruth gt){
+		this.gt = gt;
+		this.destination = destination;
+		this.initFile();
+	}
+	
+	private void initFile(){
 		
-		GroundTruth data = GroundTruth.GT;
+		this.destination = this.destination + "/results";
+		
+		File results = new File(this.destination);
+		if (!results.exists()){
+			results.mkdir();
+		} 
+	}
+	
+	/**
+	 * Creates a CSV file that contains the inter/intra values of all the buckets and a text file that contains the (probably) faulty function names 
+	 * @param rate
+	 * @throws IOException 
+	 */
+	public void valuesIntraInterBucket(float rate) throws IOException{
 		
 		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
 		nf.setMaximumFractionDigits(5);
 		
-		File fff = new File("results/FaultyFunctions.txt");
+		File fff = new File(this.destination+"/FaultyFunctions.txt");
 		FileOutputStream fffos = new FileOutputStream(fff);
 		BufferedWriter ffbw = new BufferedWriter(new OutputStreamWriter(fffos));
 		
-		File iivdf = new File("results/InterIntraValues.csv");
+		File iivdf = new File(this.destination+"/InterIntraValues.csv");
 		FileOutputStream iivfos = new FileOutputStream(iivdf);
 		BufferedWriter iivbw = new BufferedWriter(new OutputStreamWriter(iivfos));
 		iivbw.write("Function;IntraBucket;InterBucket;Frequency");
 		iivbw.newLine();
 		
-		for (String function : data.getCounters().keySet()) {
-			float frequency = data.getCounters().get(function).getFrequency();
-			float falsePositive = data.getFalsePositive(function);
-			float falseNegative = data.getFalseNegative(function);
+		for (String function : this.gt.getCounters().keySet()) {
+			float frequency = this.gt.getCounters().get(function).getFrequency();
+			float falsePositive = this.gt.getInterBucket(function);
+			float falseNegative = this.gt.getIntraBucket(function);
 			
 			iivbw.write("\""+function+"\"" +";"+nf.format(falseNegative)+";"+nf.format(falsePositive)+";"+nf.format(frequency));
 			iivbw.newLine();
-			if (data.isProbableFaultyFunction(function, rate)) {
+			if (this.gt.isProbableFaultyFunction(function, rate)) {
 				ffbw.write(function);
 				ffbw.newLine();
 			}
@@ -50,23 +72,22 @@ public class GraphCreater {
 		ffbw.close();
 	}
 	
-	public static void averageGraphs(float step) throws IOException {
+	/**
+	 * Creates a CSV file that contains the average recall and precision for each algorithm
+	 * @param step
+	 * @throws IOException
+	 */
+	public void averageGraphs(float step) throws IOException {
 		
-		Dataset datasetEditDistance;//TODO change to singleton, to avoid doing the same job every time an instance is created
+		Dataset datasetEditDistance;
 		Dataset datasetPrefixMatch;
 		Dataset datasetLCS;
 		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
 		nf.setMaximumFractionDigits(5);
 		
-		//The directory that should contain the graphs
-		File results = new File("results");
-		
-		//If the directory does not exist, a new one is created
-		if (!results.exists()) results.mkdir();
-		
 		//For each matching algorithm, a graph that depicts its precision and its recall is created
 		String st = String.format(Locale.FRENCH, "%f", step);
-		File af = new File("results/average_step_"+st+".csv");
+		File af = new File(this.destination+"/average_step_"+st+".csv");
 		FileOutputStream afos = new FileOutputStream(af);
 		BufferedWriter abw = new BufferedWriter(new OutputStreamWriter(afos));
 		
@@ -74,9 +95,9 @@ public class GraphCreater {
 		abw.newLine();
 		
 		for (float rate = step; rate < 1f; rate += step) {
-			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate);
-			datasetLCS = new Dataset(new LCSStrategy(), rate);
-			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate);
+			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate,this.gt);
+			datasetLCS = new Dataset(new LCSStrategy(), rate,this.gt);
+			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate,this.gt);
 			abw.write(
 					String.format("%.2f", rate)+";"
 					+nf.format(datasetEditDistance.getAverageRecall())+";"
@@ -91,16 +112,20 @@ public class GraphCreater {
 		abw.close();
 	}
 	
-	public static void bucketScatter() throws IOException{
-		Dataset datasetEditDistance;//TODO change to singleton, to avoid doing the same job every time an instance is created
+	/**
+	 * Creates 3 CSV files (one per algorithms) that depicts the bucket scatter
+	 * @throws IOException
+	 */
+	public void bucketScatter() throws IOException{
+		Dataset datasetEditDistance;
 		Dataset datasetPrefixMatch;
 		Dataset datasetLCS;
 		NumberFormat nf = NumberFormat.getInstance(Locale.FRENCH);
 		nf.setMaximumFractionDigits(5);
 		
-		File bsedf = new File("results/bucketScatterEditDistance.csv");
-		File bslcsf = new File("results/bucketScatterLCS.csv");
-		File bspmf = new File("results/bucketScatterPrefixMatch.csv");
+		File bsedf = new File(this.destination+"/bucketScatterEditDistance.csv");
+		File bslcsf = new File(this.destination+"/bucketScatterLCS.csv");
+		File bspmf = new File(this.destination+"/bucketScatterPrefixMatch.csv");
 		FileOutputStream bsedfos = new FileOutputStream(bsedf);
 		FileOutputStream bslcsfos = new FileOutputStream(bslcsf);
 		FileOutputStream bspmfos = new FileOutputStream(bspmf);
@@ -116,9 +141,9 @@ public class GraphCreater {
 		bspmw.newLine();
 		
 		for(float rate = 0.25f; rate < 1; rate += 0.25f){
-			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate);
-			datasetLCS = new Dataset(new LCSStrategy(), rate);
-			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate);
+			datasetEditDistance = new Dataset(new EditDistanceStrategy(), rate,this.gt);
+			datasetLCS = new Dataset(new LCSStrategy(), rate,this.gt);
+			datasetPrefixMatch = new Dataset(new PrefixMatchStrategy(), rate,this.gt);
 			
 			bsedw.write(";;;");
 			bsedw.newLine();
@@ -181,21 +206,6 @@ public class GraphCreater {
 		bsedw.close();
 		bslcsw.close();
 		bspmw.close();
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		try {
-			GraphCreater.averageGraphs(0.01f);
-			GraphCreater.averageGraphs(0.05f);
-			GraphCreater.valuesIntraInterBucket(.0001f);
-			GraphCreater.bucketScatter();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			System.err.println("Couldn't create file");
-		}
-
 	}
 
 }

@@ -1,36 +1,57 @@
 package data;
 
 public class Count {
-	private int falsePositive;
-	private int falseNegative;
+	private int interBucket;
+	private int intraBucket;
 	private int frequency;
 	
 	public Count(){
-		this.falsePositive = 0;
-		this.falseNegative = 0;
+		this.interBucket = 0;
+		this.intraBucket = 0;
 		this.frequency = 0;
 	}
 	
-	public void incrementFalsePositive(){
-		this.falsePositive++;
+	/**
+	 * Increments the inter-bucket value
+	 */
+	public void incrementInterBucket(){
+		this.interBucket++;
 	}
 	
-	public void incrementFalseNegative(){
-		this.falseNegative++;
+	/**
+	 * Increments the intra-bucket value
+	 */
+	public void incrementIntraBucket(){
+		this.intraBucket++;
 	}
 	
+	/**
+	 * Increments the frequency
+	 */
 	public void incrementFrequency(){
 		this.frequency++;
 	}
 
-	public int getFalsePositive() {
-		return falsePositive;
+	/**
+	 * Returns the inter-bucket value
+	 * @return the inter-bucket value
+	 */
+	public int getInterBucket() {
+		return interBucket;
 	}
 
-	public int getFalseNegative() {
-		return falseNegative;
+	/**
+	 * Returns the intra-bucket value
+	 * @return the intra-bucket value
+	 */
+	public int getIntraBucket() {
+		return intraBucket;
 	}
 
+	/**
+	 * Returns the frequency
+	 * @return the frequency
+	 */
 	public int getFrequency() {
 		return frequency;
 	}

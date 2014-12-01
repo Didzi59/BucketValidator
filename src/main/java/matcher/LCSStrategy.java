@@ -33,17 +33,11 @@ public class LCSStrategy extends MatchingStrategy {
 	    		// Otherwise, take the maximum of the two adjacent cases.
 	    		else
 	      			table[i][j] = Math.max(table[i][j-1], table[i-1][j]);
-	  			
-	    		//System.out.print(table[i][j]+" ");
-	  			//System.out.println(a.get(i-1)+" and "+b.get(j - 1));
 	  		}
-	  		//System.out.println();
 		}
 		
 		int LCS = table[stackSize1][stackSize2];
-		//System.out.println("LCS is "+ LCS);
 		int maxSize = Math.max(stack1.size(), stack2.size());
-		//System.out.println("max size is "+ maxSize);
 		float similarity = (float) LCS/maxSize;
 		return similarity;
 	}

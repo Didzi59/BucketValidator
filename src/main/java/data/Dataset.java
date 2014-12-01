@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import matcher.EditDistanceStrategy;
-import matcher.LCSStrategy;
-import matcher.PrefixMatchStrategy;
 import matcher.MatchingStrategy;
 
 public class Dataset {
@@ -14,24 +11,39 @@ public class Dataset {
 	private List<StackTrace> original;
 	private List<Bucket> newBucketing;
 	
-	private static final float MATCHING_RATE = 0.25f;//TODO to get rid of
+	private GroundTruth gt;
 	
-	public Dataset(MatchingStrategy strategy, float matchingRate) {
-		this.original = GroundTruth.GT.getAllStackTraces();
-		this.setNewBucketing(strategy.executeMatching(this.original, matchingRate));
+	public Dataset(MatchingStrategy strategy, float matchingRate, GroundTruth gt) {
+		this.gt = gt;
+		this.original = gt.getAllStackTraces();
+		this.newBucketing = strategy.executeMatching(this.original, matchingRate);
 	}
 	
+	/**
+	 * Returns the precision of a bucket
+	 * @param b the bucket
+	 * @return the precision
+	 */
 	public float getPrecision(Bucket b) {
 		float res = (float) getMaxDuplicateNumber(b).getMax() / b.getBucketSize();
 		return res;
 	}
 	
+	/**
+	 * Returns the recall of a bucket
+	 * @param b the bucket
+	 * @return the recall
+	 */
 	public float getRecall(Bucket b){
-		int D = GroundTruth.GT.getBucketById(getMaxDuplicateNumber(b).getId()).getBucketSize();
+		int D = this.gt.getBucketById(getMaxDuplicateNumber(b).getId()).getBucketSize();
 		float res = (float) getMaxDuplicateNumber(b).getMax() / D;
 		return res;
 	}
 	
+	/**
+	 * Returns the average precision of all the buckets
+	 * @return the average precision of all the buckets
+	 */
 	public float getAveragePrecision() {
 		float avg = 0f;
 		for (Bucket b : this.getNewBucketing()) {
@@ -41,6 +53,10 @@ public class Dataset {
 		return avg;
 	}
 	
+	/**
+	 * Returns the average recall of all the buckets
+	 * @return the average recall of all the buckets
+	 */
 	public float getAverageRecall() {
 		float avg = 0f;
 		for (Bucket b : this.getNewBucketing()) {
@@ -50,6 +66,11 @@ public class Dataset {
 		return avg;
 	}
 	
+	/**
+	 * Returns the maximum duplicate number of a given bucket
+	 * @param b the bucket
+	 * @return the duplicate number
+	 */
 	private static Couple getMaxDuplicateNumber(Bucket b) {
 		int max = 0;
 		int tmp;
@@ -86,27 +107,19 @@ public class Dataset {
 			return max;
 		}
 	}
-	
-	public static void main(String args[]) {
-		//List<Bucket> newBucketing = new EditDistanceStrategy().executeMatching(GroundTruth.GT.getAllStackTraces(), MATCHING_RATE);
-		Dataset data = new Dataset(new EditDistanceStrategy(), MATCHING_RATE);
-		Dataset data2 = new Dataset(new PrefixMatchStrategy(), MATCHING_RATE);
-		Dataset data3 = new Dataset(new LCSStrategy(), MATCHING_RATE);
-		for (Bucket b : data.getNewBucketing()) {
-			b.print();
-			System.out.println("d = "+getMaxDuplicateNumber(b).getMax());
-			System.out.println("ID = "+getMaxDuplicateNumber(b).getId());
-			System.out.println("precision = "+data.getPrecision(b));
-			System.out.println("recall = "+data.getRecall(b));
-		}
-		//Bucket b = data.getOrCreateBucket("658");
-		//Normalizer.removeRecurrence(b).print();
-	}
 
+	/**
+	 * Returns all the buckets newly created
+	 * @return the buckets
+	 */
 	public List<Bucket> getNewBucketing() {
 		return newBucketing;
 	}
 
+	/**
+	 * Sets the new bucketing
+	 * @param newBucketing the new bucketing
+	 */
 	public void setNewBucketing(List<Bucket> newBucketing) {
 		this.newBucketing = newBucketing;
 	}

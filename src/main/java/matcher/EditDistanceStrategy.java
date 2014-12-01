@@ -5,7 +5,7 @@ import java.util.List;
 import data.StackTrace;
 
 public class EditDistanceStrategy extends MatchingStrategy {
-
+	
 	protected float similarityScore(StackTrace s, StackTrace t) {
 		List<String> stack1 = s.getFunctionCalls();
 		List<String> stack2 = t.getFunctionCalls();
@@ -49,9 +49,7 @@ public class EditDistanceStrategy extends MatchingStrategy {
 		}
 	 
 		int distance = results[stackSize1][stackSize2];
-		//System.out.println("distance is " + distance);
 		int maxSize = Math.max(stackSize1, stackSize2);
-		//System.out.println("max size is " + maxSize);
 		float similarity = (float)(maxSize - distance)/maxSize;
 		return similarity;
 	}
